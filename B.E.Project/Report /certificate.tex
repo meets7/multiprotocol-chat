@@ -1,0 +1,73 @@
+%My Title Page
+\begin{titlepage}
+\ifthenelse{\equal{\statustitle}{Mr.}}
+{
+	\def \person {his}
+}
+{
+	\ifthenelse{\equal{\statustitle}{Mr}}
+	{
+		\def \person {his}
+	}
+	{
+		\ifthenelse{\equal{\statustitle}{mr}}
+		{
+			\def \person {his}
+		}
+		{
+			\ifthenelse{\equal{\statustitle}{mr.}}
+			{
+				\def \person {his}
+			}
+			{
+				\def \person {her}
+			}
+		}
+	}
+}
+
+
+%-------------------------------------------------------------------------
+%For page border
+%----------------------------------------------------
+\thisfancypage{%
+  \setlength{\fboxrule}{1pt}\doublebox}{}
+
+\begin{center}
+%----------------------------------------------------
+\begin{minipage}[c]{0.18\textwidth}
+\includegraphics[width=\linewidth]{GHRCEMlogo}%
+\end{minipage}
+%----------------------------------------------------
+\begin{minipage}[c]{0.80\textwidth}
+\centering
+\Large{\textbf{AISSMS's Institute Of Information Technology, Shivaji Nagar, Pune- 01 \mbox{} 
+}}
+\end{minipage}
+%----------------------------------------------------
+ \mbox{} \\ \mbox{} %\\ \mbox{} \\ \mbox{} \\
+\Large{\textbf{\uppercase{certificate}}}
+ \mbox{} %\\ \mbox{} \\
+\end{center}
+%----------------------------------------------------
+\begin{adjustwidth}{0.40in}{0.40in}
+\setstretch{2}
+
+\begin{center}\large{\textit{This is to certify that the {\thesistype} entitled \\
+ \textbf{\thesistitle} \\submitted by\\ \textbf{{\nameoncerti}} \end{center} \\is the record of bonafide work carried out by them in the partial fulfillment of requirement of award of Degree of \textbf{Bachelor of Engineering} (Computer Engineering) as prescribed by the University of Pune in the academic year 2013-14.}}\\ \\ 
+\normalsize{Date: }\scriptsize{...................................}\\ \\ 
+%\normalsize{............................................................}\\ 
+%\normalsize{Project Guide [\guidename]}\\ \\
+\normalsize{........................................................} { }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ } \normalsize{............................................................ }\\
+\normalsize{Project Guide [\guidename]{ }{ }{ }{ }{ }{ }\hfill HOD,Computer Engineering[\depthead]}
+\\ \\
+ \begin{center}
+	 { \normalsize{........................................................}\\
+\mbox{}\normalsize{Principal [\principal]}}
+ \end{center}
+
+%Examination: \\
+%\normalsize{Examiner 1:\normalsize{........................................................................}}\\ \\
+%\normalsize{Examiner 2:\normalsize{........................................................................}}\\
+\end{adjustwidth}
+\end{titlepage}

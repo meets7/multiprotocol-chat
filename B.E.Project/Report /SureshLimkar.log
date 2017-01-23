@@ -1,0 +1,1068 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.3.17)  10 APR 2013 14:06
+entering extended mode
+**SureshLimkar.tex
+("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\SureshLimkar.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
+, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
+ian, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
+ kannada, kurmanji, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman
+-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
+ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, w
+elsh, loaded.
+("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\SureshLimkar.cls"
+
+LaTeX Warning: You have requested document class `SureshLimkar',
+               but the document class provides `SVNITStyle'.
+
+Document Class: SVNITStyle 2010/04/10
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancybox\fancybox.sty"
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box26
+\shadowsize=\dimen105
+\@Sbox=\box27
+\do@VerbBox=\toks15
+\the@fancyput=\toks16
+\this@fancyput=\toks17
+\EndVerbatimTokens=\toks18
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\changepage\changepage.sty"
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count89
+\cp@tempcnt=\count90
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+))
+("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\SureshLimkar.aux"
+
+LaTeX Warning: Label `HMC1052L' multiply defined.
+
+
+LaTeX Warning: Label `Traffic Light State Diagram' multiply defined.
+
+
+LaTeX Warning: Label `Traffic Light State Diagram' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count91
+\scratchdimen=\dimen106
+\scratchbox=\box28
+\nofMPsegments=\count92
+\nofMParguments=\count93
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count94
+\MPscratchDim=\dimen107
+\MPnumerator=\count95
+\makeMPintoPDFobject=\count96
+\everyMPtoPDFconversion=\toks20
+) ("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\titlepage.tex"
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \textbf{[B. E. Computer Engineering]}\\ \\
+                                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   A
+l.32 [April-May 2013]
+                     \\ \\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   A
+l.32 [April-May 2013]
+                     \\ \\
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 [April-May 2013]\\ \\
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<GHRCEMlogo.jpg, id=1, 1856.3754pt x 2408.7591pt>
+File: GHRCEMlogo.jpg Graphic file (type jpg)
+ <use GHRCEMlogo.jpg>
+Package pdftex.def Info: GHRCEMlogo.jpg used on input line 35.
+(pdftex.def)             Requested size: 71.13188pt x 92.29094pt.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \mbox{} \\Affiliated to\\ \\
+                                  \mbox{} \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<Pune_univ_logo.jpg, id=2, 192.72pt x 144.54pt>
+File: Pune_univ_logo.jpg Graphic file (type jpg)
+ <use Pune_univ_logo.jpg>
+Package pdftex.def Info: Pune_univ_logo.jpg used on input line 43.
+(pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.46 \end{center}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Hemangi/Desktop/New folder/Source Code/Report/GHRCEMlogo.
+jpg> <C:/Users/Hemangi/Desktop/New folder/Source Code/Report/Pune_univ_logo.jpg>])
+("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\certificate.tex"
+File: GHRCEMlogo.jpg Graphic file (type jpg)
+ <use GHRCEMlogo.jpg>
+Package pdftex.def Info: GHRCEMlogo.jpg used on input line 39.
+(pdftex.def)             Requested size: 84.55244pt x 109.67589pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 40.
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--65
+
+ []
+
+[1]) ("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\acknopage.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+
+ []
+
+[1]) ("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\abstractpage.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+[1]) ("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\SureshLimkar.toc")
+\tf@toc=\write4
+ [1
+
+]
+("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\SureshLimkar.lof")
+\tf@lof=\write5
+ [2
+
+]
+("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\SureshLimkar.lot")
+\tf@lot=\write6
+ [3
+
+]
+Chapter 1.
+! Undefined control sequence.
+l.80 \subfloat
+              {\includegraphics[scale=0.075]{newsys.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<newsys.jpg, id=37, 4655.3925pt x 4850.12pt>
+File: newsys.jpg Graphic file (type jpg)
+ <use newsys.jpg>
+Package pdftex.def Info: newsys.jpg used on input line 80.
+(pdftex.def)             Requested size: 349.13937pt x 363.7433pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \chapter
+             {VEHICLE DETECTION}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[4
+
+] [5 <C:/Users/Hemangi/Desktop/New folder/Source Code/Report/newsys.jpg>]
+Chapter 2.
+! Undefined control sequence.
+l.93 \subfloat
+              {\includegraphics{chip.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<chip.jpg, id=44, 212.29312pt x 170.13562pt>
+File: chip.jpg Graphic file (type jpg)
+ <use chip.jpg>
+Package pdftex.def Info: chip.jpg used on input line 93.
+(pdftex.def)             Requested size: 212.2926pt x 170.1352pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+! Undefined control sequence.
+l.101 \subfloat
+               {\includegraphics{chip1.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<chip1.jpg, id=45, 222.8325pt x 222.8325pt>
+File: chip1.jpg Graphic file (type jpg)
+ <use chip1.jpg>
+Package pdftex.def Info: chip1.jpg used on input line 101.
+(pdftex.def)             Requested size: 222.83195pt x 222.83195pt.
+ [6
+
+ <C:/Users/Hemangi/Desktop/New folder/Source Code/Report/chip.jpg>] [7 <C:/Users/Hemangi/Desktop/New folder/Source Code/
+Report/chip1.jpg>]
+Chapter 3.
+! Undefined control sequence.
+l.114 \subfloat
+               {\includegraphics[scale=0.675]{chart.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<chart.jpg, id=52, 355.3275pt x 242.40562pt>
+File: chart.jpg Graphic file (type jpg)
+ <use chart.jpg>
+Package pdftex.def Info: chart.jpg used on input line 114.
+(pdftex.def)             Requested size: 239.84654pt x 163.62411pt.
+
+! Undefined control sequence.
+l.123 \subfloat
+               {\includegraphics[scale=0.675]{chart1.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<chart1.jpg, id=53, 355.3275pt x 248.42813pt>
+File: chart1.jpg Graphic file (type jpg)
+ <use chart1.jpg>
+Package pdftex.def Info: chart1.jpg used on input line 123.
+(pdftex.def)             Requested size: 239.84654pt x 167.68933pt.
+ [8
+
+ <C:/Users/Hemangi/Desktop/New folder/Source Code/Report/chart.jpg>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[9 <C:/Users/Hemangi/Desktop/New folder/Source Code/Report/chart1.jpg>]
+Chapter 4.
+! Undefined control sequence.
+l.136 \subfloat
+               {\includegraphics[scale=0.675]{flow.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<flow.jpg, id=61, 310.15875pt x 392.21532pt>
+File: flow.jpg Graphic file (type jpg)
+ <use flow.jpg>
+Package pdftex.def Info: flow.jpg used on input line 136.
+(pdftex.def)             Requested size: 209.35757pt x 264.74588pt.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   A
+l.140 \hspace A
+               lgorithm:- Step 01: Through a field survey find the following...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   A
+l.140 \hspace A
+               lgorithm:- Step 01: Through a field survey find the following...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   P
+l.142 \hspace P
+               edestrian flow for hour: Usually at an intersection there is ...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   P
+l.142 \hspace P
+               edestrian flow for hour: Usually at an intersection there is ...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   P
+l.143 \hspace P
+               ercentage of right-turns, left-turns, straight-through in eac...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   P
+l.143 \hspace P
+               ercentage of right-turns, left-turns, straight-through in eac...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.144 \hspace S
+               tep 02: Calculating the Passenger Car Volume (PCV)\\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.144 \hspace S
+               tep 02: Calculating the Passenger Car Volume (PCV)\\
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   P
+l.145 \hspace P
+               CV = (Percentage of Heavy vehicles * 1.75) + (Percentage of b...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   P
+l.145 \hspace P
+               CV = (Percentage of Heavy vehicles * 1.75) + (Percentage of b...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--146
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10
+
+]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 \hspace
+              Step 03: Define the all-red time, red-amber time.\\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.147 \hspace S
+               tep 03: Define the all-red time, red-amber time.\\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.147 \hspace S
+               tep 03: Define the all-red time, red-amber time.\\
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   A
+l.148 \hspace A
+               ll-red time is the time that all the red lights at the inters...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   A
+l.148 \hspace A
+               ll-red time is the time that all the red lights at the inters...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.149 \hspace S
+               tep 04: Calculate the Critical Lane Volume (CLV) CLV = Maximu...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.149 \hspace S
+               tep 04: Calculate the Critical Lane Volume (CLV) CLV = Maximu...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.150 \hspace S
+               tep 05: Calculate the cycle time using the standard ‚ÄòWebste...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.150 \hspace S
+               tep 05: Calculate the cycle time using the standard ‚ÄòWebste...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+! Missing number, treated as zero.
+<to be read again> 
+                   C
+l.152 \hspace C
+               0 = ( 1.5L+5 ) / [1-( Œ£CLVi / S ) ]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   C
+l.152 \hspace C
+               0 = ( 1.5L+5 ) / [1-( Œ£CLVi / S ) ]
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no Œ in font cmr10!
+Missing character: There is no £ in font cmr10!
+! Missing number, treated as zero.
+<to be read again> 
+                   L
+l.154 \hspace L
+               =lost time due to acceleration + all red time + red-amber time\\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   L
+l.154 \hspace L
+               =lost time due to acceleration + all red time + red-amber time\\
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.155 \hspace S
+               tep 06: Calculate the effective green time The time for the g...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.155 \hspace S
+               tep 06: Calculate the effective green time The time for the g...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   g
+l.156 \hspace g
+               i = [(C0- L) CLi ]/ Œ£CLVi\\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   g
+l.156 \hspace g
+               i = [(C0- L) CLi ]/ Œ£CLVi\\
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no Œ in font cmr10!
+Missing character: There is no £ in font cmr10!
+! Missing number, treated as zero.
+<to be read again> 
+                   W
+l.157 \hspace W
+               here i=1,2 (i.e.,must be calculated for both phases) \\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   W
+l.157 \hspace W
+               here i=1,2 (i.e.,must be calculated for both phases) \\
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.158 \hspace S
+               tep 07: Calculate the actual green time
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.158 \hspace S
+               tep 07: Calculate the actual green time
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   W
+l.160 \hspace W
+               here i=1,2 li =loss time ai =amber time\\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   W
+l.160 \hspace W
+               here i=1,2 li =loss time ai =amber time\\
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.161 \hspace S
+               tep 08: Calculate actual the red time\\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.161 \hspace S
+               tep 08: Calculate actual the red time\\
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--164
+
+ []
+
+[11 <C:/Users/Hemangi/Desktop/New folder/Source Code/Report/flow.jpg>]
+Chapter 5.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+! Undefined control sequence.
+l.171 \subfloat
+               {\includegraphics[scale=0.5]{simu.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<simu.jpg, id=68, 377.15906pt x 470.50781pt>
+File: simu.jpg Graphic file (type jpg)
+ <use simu.jpg>
+Package pdftex.def Info: simu.jpg used on input line 171.
+(pdftex.def)             Requested size: 188.57907pt x 235.25333pt.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.181 \hspace S
+               tep 01: ‚ÄòRead‚Äô button. Starts reading the serial port of ...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.181 \hspace S
+               tep 01: ‚ÄòRead‚Äô button. Starts reading the serial port of ...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.182 \hspace S
+               tep 02: Calculate‚Äô button Calculates the optimum cycle time...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.182 \hspace S
+               tep 02: Calculate‚Äô button Calculates the optimum cycle time...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.183 \hspace S
+               tep 03: ‚ÄòSimulate‚Äô button Simulates the operation of traf...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.183 \hspace S
+               tep 03: ‚ÄòSimulate‚Äô button Simulates the operation of traf...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+! Undefined control sequence.
+l.186 \subfloat
+               {\includegraphics[scale=0.675]{emu.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<emu.jpg, id=69, 533.74406pt x 398.23781pt>
+File: emu.jpg Graphic file (type jpg)
+ <use emu.jpg>
+Package pdftex.def Info: emu.jpg used on input line 186.
+(pdftex.def)             Requested size: 360.27798pt x 268.81107pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--190
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12
+
+] [13 <C:/Users/Hemangi/Desktop/New folder/Source Code/Report/simu.jpg> <C:/Users/Hemangi/Desktop/New folder/Source Code
+/Report/emu.jpg>]
+Chapter 6.
+! Undefined control sequence.
+l.196 \subfloat
+               {\includegraphics[scale=0.675]{res.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: File `res.jpg' not found on input line 196.
+
+
+! Package pdftex.def Error: File `res.jpg' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 ...at{\includegraphics[scale=0.675]{res.jpg}
+                                                  }%
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[14
+
+]
+Chapter 7.
+[15
+
+]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+! Misplaced alignment tab character &.
+l.222 ...ess sensor network designs". John Wiley &
+                                                   Sons Ltd, 2003
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[16
+
+] ("C:\Users\Hemangi\Desktop\New folder\Source Code\Report\SureshLimkar.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1732 strings out of 493921
+ 23720 string characters out of 3144870
+ 76557 words of memory out of 3000000
+ 5009 multiletter control sequences out of 15000+200000
+ 8562 words of font info for 30 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 34i,8n,45p,1108b,262s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbxti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
+2.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on SureshLimkar.pdf (20 pages, 6101005 bytes).
+PDF statistics:
+ 125 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+

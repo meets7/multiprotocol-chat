@@ -1,0 +1,1695 @@
+\documentclass{SureshLimkar}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{pdfpages}
+
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+\renewcommand{\baselinestretch}{1.5}
+
+%Enter Suitable Information
+%May Differ
+%-----------------------------------------------------------------
+\def \statustitle {Mr.} %Title (Mr., Ms., Mrs.)
+\def \thesistype {Project Report} %Thesis Type
+\def \thesistitle {\lq\lq Multi Protocol Cross Platform Communication Middleware\rq\rq} %Thesis Title
+\def \authorname {Sangvikar Dhruv G. [Roll No: 62]\\Tekale Vikas V. [Roll No: 74]} %Author
+\def \nameoncerti {\textbf{Sangvikar Dhruv G.\\Tekale Vikas V.}} %Author on Certificate
+%\def \RegNo {Roll No: 62,74} %Registration No.
+\def \course { B.E.} %Degree
+\def \Specialisation {Computer} % only for network student 
+\def \guidename {Mrs. Minal P. Nerkar} %Guide Name
+\def \depthead {Mrs. S.N.Zaware} %Name of HoD
+\def \principal {Dr. P. B. Mane}
+\def \department {Computer Engineering} %Department
+\def \year {2013 - 2014} %Academic Year
+%-----------------------------------------------------------------
+
+%Common for all. Can be optional
+%-----------------------------------------------------------------
+\def \logofile {GHRCEMlogo.jpg} 
+\def \society {All India Shri Shivaji Memorial Society's}
+\def \insti1 {Institute Of Information Technology}
+\def \place {Shivaji Nagar, Pune - 01}
+%-----------------------------------------------------------------
+\def \acktext %Enter Acknowledgement here
+{
+\hspace {0.4 in}Apart from our own, the success of this project depends largely on the encouragement and guidelines of many others. We are especially grateful to our guide \textbf{Mrs. Minal P. Nerkar } who has provided his guidance, expertise and encouragement. We would also like to thank \textbf{Persistent Systems Ltd.} and our mentors \textbf{Ms. Aditi Watway} and \textbf{Mr. Kaivalya Jamdar} for their invaluable help.\\
+
+\hspace {0.3 in}We express our heartfelt gratefulness to \textbf{Dr. P.B. Mane}, Principal, AISSMS's IOIT and \textbf{Mrs. S.N. Zaware}, Head of Computer Engineering Department, AISSMS's IOIT, for their stimulating supervision whenever required during our project work. We are also thankful to the staff of \textbf{Computer Engineering Department} for their cooperation and support. \\
+
+\hspace {0.3 in}We would like to put forward our heartfelt acknowledgment to all our classmates, friends and all those who have directly or indirectly provided their overwhelming support during our project work.
+}
+
+\def \abstrtext %Enter Abstract Here
+{
+\hspace {0.5 in}To facilitate inter­ protocol communications from multiple platforms to ease user management and ultimately reduce data redundancy, bandwidth and memory wastage. Thus, to provide freedom for the user and conservation of resources by introducing an abstraction at the application level.\\
+
+\textsl{\textbf{Keywords-} Cross platform, Multi Protocol, Communication}
+}
+
+\begin{document}
+
+\maketitlepage %Title page
+
+\newpage
+
+\makecertipage %Certificate
+
+\newpage
+
+\includepdf[pages={-}]{./mypdf/sponsor.pdf}
+
+\newpage
+
+\includepdf[pages={-}]{./mypdf/project-complete.pdf}
+
+\newpage
+
+\makeackpage %Acknowledgement
+
+\newpage
+
+\makeabstrpage %Abstract
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+%\newpage
+\chapter{Introduction}
+\section{Overview}
+\hspace{0.5 in}With the advent of multiple communication platforms available, the internet messaging user community is fragmented into users of different platforms and services. Each service provider has it's own protocol and client implementation. Thus a standard client for instant messaging is lacking.  There is a need to standardize communication platforms so that the fragmentation can be reduced and ultimately reducing the data and storage redundancy.  XMPP is an open technology for real-time communication[1]. Major service providers like Facebook, Google,etc. use their proprietary protocols and not the XMPP technology. At present they have to completely migrate their info and contacts to the other provider in order to use the service. Therefore the user has to rely on completely different clients, platforms and technologies. This leads to extra usage of computing resources like storage and processing. In short, heterogeneous systems for the same task are present. A common solution to this is a Message Oriented Middle ware (MOM). This architectural framework for interoperability can be applied to ease the communication and bridge the gap between the users and service providers. Thus a cross platform and multi protocol middle ware can be used.
+\hspace{0.5 in} 
+\section{Brief Description}
+\hspace{0.5 in}The internet offers fantastic opportunities to communicate with others. Apart from the modern services like video chat, audio chat and other interaction services, instant messaging has been one of the most useful communication means. As a result there has been a tremendous rise in the number of service providers. Internet giants like Facebook, Google, Microsoft, Yahoo!, etc. each have their own services, implemented in their own proprietary technologies.[19]  Because of these many choices, most of the users making use of these services are registered with every different service provider. So every time they have to communicate or chat using instant messages, they have to hop from one service provider to the other. This results in many problems. A few of them may be stated as follows:
+\\
+\begin{itemize}
+	\item Every service provider has a different client, which have to be obtained from the respective service providers' portals.
+\item Users have to get acquainted with different interfaces and mechanisms for the same task of communication.
+\item Different clients also results in extra resource usage like extra computing and storage.
+\item User has to keep a tab of the different clients required to use a particular service.
+\item In large scale environments, when installation on multiple devices is necessary, the whole process of setting up becomes time 	consuming and redundant.
+\item Functionality provided by one platform may be absent in the other client. These results in user confusion.
+\item Completely different interface on the smart phone and tablet devices also leads to the same problems stated above.
+\item On resource restricted machines, multiple clients cannot be run (systems like thin clients, etc).
+\item With more and more services, and each having separate protocol and client, it is not feasible to use them separately.
+\end{itemize}
+\newpage
+Normally protocol building is done with one of the following strategies:
+\begin{itemize}
+\item Custom protocols
+\item Protocol frameworks 
+\item Horizontal protocols
+\end{itemize}
+\\
+\hspace{0.5 in}Now, with most of the service providers having used the custom protocols, it has resulted in multiple protocols for the same task of real-time instant messaging. Thus, due to multiple independent and non-inter-operable protocols, it is necessary to apply a abstraction layer above these services. This middleware will effectively hide the mechanism of each service provider by giving the same working mechanism and interface to work with every service. This solution is basically based upon the MOM architecture. [2] Some clients exist which provide multi protocol communication, by giving access to the different service providers. But they exist on a single platform – either on desktop computers or for phones. Thus a pure multi protocol and cross platform client is absent which can provide the same functionality everywhere. The main goal of this work is to provide an abstraction layer above the service layer so that the user is unaware of the underlying platform and service provider without any loss in core functionality, and abstract the underlying protocols and mechanism, thereby implementing the MOM model in SOA systems. Also resource consumption can be minimized by using the same client for different service providers.
+\\
+\section{Problem Definition}
+\hspace{0.5 in}To facilitate inter­protocol communications from multiple platforms to ease user management and ultimately reduce data redundancy, bandwidth and memory wastage. Thus, to provide freedom for the user and conservation of resources by introducing an abstraction at the application level. 
+
+\chapter{Literature Survey}
+\section{Brief Overview}
+\hspace{0.5 in}With multiple service providers available, the user has lots of choice. This leads to
+ample competition and helps for innovation. But this also produces some basic problems
+like user base fragmentation, multiple applications, et al. This affects the user experience negatively.
+\\
+\hspace{0.5 in}Asking users to migrate to one single platform is ethically and technically not
+possible. The ethos of software development is itself challenged. Also, it is not fair to
+assign a particular service, for the user and also for the service providers. So working at
+the topmost level of applications, why not provide an abstraction to the services so the
+user is left unaffected and in fact does not have to consider the underlying service
+provider. That provides a win­win situation for everybody, with added advantages of
+defragmentation, single­user sign on, resource conservation and ease of accessibility.
+Thus, multi protocol translation middleware will be useful.
+\\
+\hspace{0.5 in}With various operating system platforms available, it will be only unfair to provide this so called abstraction layer only to a subset of the total computer users. Therefore, this
+abstraction layer middleware should be usable on multiple platforms, like ­ web, PC and
+mobile. Also, even though implementation as a web application theoretically satisfies all
+the user base, a native client and application on multiple platforms does help. So,for
+example, a user with a windows PC and an android mobile phone can access this
+middleware client from the PC directly or using a web browser or directly from his
+android smartphone app. Thus, by providing multiple platforms, the objective of freedom
+and choice is provided.
+}
+\section {The protocol: XMPP}
+ \hspace{0.5 in}As in any software development, the target user of the product is thought of first. His needs and requirements are taken into consideration along with the features to be implemented so that maximum user base is benefited. Also, for a non­profit production, open source technology is always the primary resource. Therefore, after considering many protocols, as a basic protocol the open source and mostly widely used protocol \textbf{XMPP} was decided.
+ \\ 
+ \hspace{0.5 in}Extensible Messaging and Presence Protocol (XMPP) is a communications protocol for
+message ­oriented middleware based on Extensible Markup Language (XML) .The
+protocol is used for near real­ time, instant messaging (IM), presence information, and
+contact list maintenance. Designed to be extensible, the protocol has also been used for
+publish­ subscribe systems, signalling for VoIP, video, file transfer, gaming, applications
+such as the smart grid, and social networking services.
+\\
+\hspace{0.5 in}Unlike most instant messaging protocols, XMPP is defined in an open standard and
+uses an open systems approach of development and application, by which anyone may
+implement an XMPP service and interoperate with other organizations' implementations.
+Because XMPP is an open protocol, implementations can be developed using any
+software license; although many server, client, and library implementations are
+distributed as free and open­source software, numerous freeware and commercial
+software implementations also exist.
+\\ \\
+\newpage
+\section {Features of XMPP}
+\hspace{0.5 in}\textbf{Benefits:}\\
+\begin{itemize}
+ \item Decentralization \\
+ The architecture of the XMPP network is similar to email; anyone
+can run their own XMPP server and there is no central master
+server.
+\item \textbf{Open standards} \\
+The Internet Engineering Task Force has formalized XMPP as an
+approved instant messaging and presence technology under the
+name of XMPP (the latest specifications are RFC 6120and RFC
+6121). No royalties are required to implement support of these
+specifications and their development is not tied to a single vendor.
+\item \textbf{History} \\
+XMPP technologies have been in use since 1999. Multiple
+implementations of the XMPP standards exist for clients, servers,
+components, and code libraries.
+\item \textbf{Security }\\
+XMPP servers can be isolated from the public XMPP network (e.g.,
+on a company intranet), and strong security (via SASL and TLS) has
+been built into the core XMPP specifications.
+\item \textbf{Flexibility }\\
+Custom functionality can be built on top of XMPP; to maintain
+interoperability, common extensions are managed by the XMPP
+Standards Foundation. XMPP applications beyond IM include
+group chat, network management, content syndication,
+collaboration tools, file sharing, gaming, remote systems control and
+monitoring, geolocation, middleware and cloud computing, VoIP
+and Identity services.
+\end{itemize}
+\\
+\hspace{0.5 in}\textbf{Drawbacks:}\\
+\begin{itemize}
+ \item In ­band binary data transfer is inefficient
+\end{itemize}
+\newpage
+\section {Service providers: Facebook and Google}
+\hspace{0.5 in}The protocol helped us narrow down the service providers which we could use for putting the abstraction layer onto. With the following targets-
+\begin{itemize}
+ \item XMPP implementation
+ \item Maximum user base
+\end{itemize}
+\\Thus it was easy to narrow down the list to Facebook and Google. 
+\\With a large user base for both these services, and a messaging service implementation done using XMPP as the base, these were the ideal providers.
+\\Actually, both of them use proprietary protocols built upon the open source XMPP.  So the underlying protocol is not identical for these providers.
+\\Google removed its full support for XMPP in May 2013 and shifted to a proprietary protocol. But clients still can access the Google chat using the XMPP protocol. 
+\\Facebook uses a proprietary protocol and until 2010 did not allow its messaging service to be used in other applications. But since 2010, it has made possible to use the Facebook chat service by developing a chat specific application programming interface (API) for developers.
+\\Thus, even though not using XMPP purely, it is possible to use these platforms for the above said abstraction. 
+\newpage
+
+\section {Related Work}
+\hspace{0.5 in}With the last decade putting many service providers on the communication map, protocols have been developed at rapid speed. Our review shows that some solutions do exist to partially tackle the above stated problems.\\
+\hspace{0.5 in} Pidgin is an open source software which provides clients for the desktop platforms Windows and Linux. But it does not provide cross platform solution. Also, due to it be being written in C primarily, its direct porting to other platforms is not possible directly. [3]\\
+\hspace{0.5 in}Miranda IM is an open source multi protocol instant messaging client designed only for Windows. Thus other platforms and even operating systems are not supported at all. Also, being written in C and C++, it poses portability problems. [4]\\
+\hspace{0.5 in}Empathy is the default chat application in many Linux distributions. Written in C, supporting multiple protocols, it poses portability issues. [5] Also, the messages are not encrypted using even the basic UTF-8 encoding systems, and is not recommended for enterprise and high security environments. [6]\\
+\hspace{0.5 in}IBM SameTime is a proprietary solution from IBM, which supports IBM-internally developed multiple protocols and acts as a middleware for other real-time services. This does not support other service providers and is restricted to enterprise environments.[7]\\
+\hspace{0.5 in}naim is a console client which supports limited number of protocols, with the notable omission of XMPP. Lack of common protocols and graphical interface, makes it highly restricted in its usage. Also, only the desktop platform is supported. [8]\\
+\hspace{0.5 in}Kopete is a KDE based application with only the desktop client. It supports multiple protocols, but being written in C++ and Qt, poses the problem of being  non-cross platform. [9]
+\hspace{0.5 in}Kaidu is multi protocol but not cross platform. Also, written in C++, it supports only the Gadu-Gadu protocol compliant protocols.[10]\\
+\hspace{0.5 in}InstantBird is another application based upon Pidgins libpurple library and Mozilla's XULRunner runtime environment. It exists only for the desktop platform.[11]\\
+\hspace{0.5 in}Trillian is cross platform and multi protocol client which has native applications for desktop and smart phone platforms. But it is a proprietary software and has to be paid for. [12]\\
+\hspace{0.5 in}Imo.im is a web based service which allows to connect multiple services through its interface. But a native client for the desktop does not exist, with the smart phone client also only in development. Also as of 2 March, 2013, it has discontinued its services to develop a proprietary messaging solution.[13]\\
+\hspace{0.5 in}Jitsi is a multi protocol client written in Java. It can be ported to other Java supported platforms, but till date no such client exists.[14]\\
+\hspace{0.5 in}Thus, a truly cross platform solution does not exist.  Trillian is the closest it gets, but still they have the some limitations in the way they are implemented.
+The given implementations are the most commonly and easily available software solutions. Also, solutions which have been discontinued from development have been discarded. 	\\
+\hspace{0.5 in}The significance of our development approach is to resolve each of these above cited problems. The development for interoperability will be based upon REST architure. The development will be targeted such that the solution will be cross platform and target atleast two or more protocols. The GUI for different platforms will be as similar as possible in the constraints of the different intefaces of the platforms.\\
+\newpage
+
+\section{Java}
+\hspace{0.5 in}The main reason behind choosing Java as a platform for our project is that, Java is platform independent. Using java we can implement the software which would be compatible on all the operating systems. Right now, we are trying to develope the software on:\\
+\begin{itemize}
+	\item Microsoft Windows - since it is the most common OS
+	\item Linux - since it is the best open source OS
+\end{itemize}
+Java Supports the three main following features :
+\begin{itemize}
+	\item Portability
+	\begin{enumerate}
+		\item Output of a Java compiler is Non Executable Code i.e Bytecode.
+	  \item	Bytecode is a highly optimized set of instructions
+		\item Bytecode is executed by Java run-time system, which is called the Java Virtual Machine (JVM).
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{java.jpg}}%
+\caption{Working of Java}%
+\label{Working of Java}%
+\end{figure}
+	
+		\item JVM is an interpreter.
+		\item JVM accepts Bytecode as input and execute it.
+		\item Translating a Java program into bytecode makes it much easier to run a program in a wide variety of environments because only the JVM needs to be implemented for each platform.
+		\item For a given System we have Run-time package , once JVM is installed for particular system then any java program can run on it.
+		\item However Internal details of  JVM will differ from platform to platform but still all understand the Same Java Bytecode.
+	\end{enumerate}
+	\item Safety
+	\begin{enumerate}
+		\item Java program is executed by the JVM.
+		\item The JVM prevent java code from generating side effects outside of the system.
+		\item Safety is also enhanced by certain restrictions that exist in the Java language
+	\end{enumerate}
+	\item Speed
+	\begin{enumerate}
+		\item When a program is interpreted, it generally runs slower than the same program would run if compiled to executable code.
+		\item In Java Compiler will generate ByteCode which is highly optimized.
+		\item Thus running highly optimized code using interpreter makes execution of java program faster.
+	\end{enumerate}
+\end{itemize}
+\newpage
+
+\chapter{Software Requirement Specification}
+
+\section{Introduction}
+\hspace{0.5 in}With advent of multiple communication platforms available, the internet community is fragmented into users of different platforms. Each service provider has it's own protocol implemented. Thus a standard protocol for chat/IMs is lacking.  There is a need to standardize communication platforms so that the fragmentation can be reduced and ultimately the  redundancy can be reduced.
+\\
+\hspace{0.5 in}For example, users currently use the most popular like facebook, google or yahoo messenger for chatting. For this purpose they have to login in different locations and keep separate clients. These leads to wastage of resources in terms of storage, memory and network bandwidth. Also managing multiple accounts is itself a task which users have to deal with. These all can be prevented if there existed a single standard IM protocol for all services. But that is not the case.
+\\
+\hspace{0.5 in}So, a middle translating layer which would translate from one protocol to another in the application layer of network model could be implemented as a partial solution to the above problem. 
+\\
+
+\subsection{Project scope}
+\hspace{0.5 in} The idea can be extended to any number of protocols and service providers. But as a prototype implementation, the software will be targeted at two service providers- Google and Facebook. They both use their own proprietary protocols. As a base protocol XMPP is targeted. Also, if time permits, Yahoo! chat service, with the YMSG protocol will be aimed for.
+\\
+\hspace{0.5 in}The multi platform part of the software will be worked out by targeting for a stand alone application, a web application and an Android application. Thus web, PC and the mobile platforms will be targeted.
+\\
+
+\subsection{User Classes and Characteristics}
+\hspace{0.5 in}\\The primary user of this product will be frequent chat users, who have to hop from one client to another to switch providers. Also, end users who are less tech savvy will also be benefited as they would have to learn the nuances of only one client application.
+\\
+
+\subsection{Operating Environment}
+\hspace{0.5 in}The Operating Environment for the software part of the product consists of a PC or Laptop with Microsoft Windows or Linux operating environment or any Android smart phone. The hardware platform must be compatible with the corresponding Operating Systems.
+\subsubsection{Software Requirements}
+\begin{itemize}
+	\item Eclipse
+	\item Windows XP or higher / Linux 12.04 or higher
+	\item JDK 7, JRE 1.7
+	\item Android development tools and plugins
+	\item Virtual machine emulator for testing
+\end{itemize}
+\subsubsection{Hardware Requirements}
+The following platforms will be targeted-
+\begin{itemize}
+ \item PC Linux and Windows
+ \item Android 2.3+
+\end{itemize}
+
+\begin{itemize}
+	\item 20 MB HDD
+	\item 128 MB RAM
+	\item 1.8 GHz processor
+\end{itemize}
+An internet connection will be required.
+\subsection{Design and implementation Constraints}
+\begin{itemize}
+ \item Periodic service login might be required due to the service provider restrictions.
+\item Any changes by the service providers will have to be manually incorporated and compile code recompilation might be required to modify and implement the changes.
+\end{itemize}
+\subsection{Assumptions and dependencies}
+Following are the assumptions that are required for the system:-
+\begin{itemize}
+	\item Service will be available for only those users with existing accounts on the mentioned service providers. 
+	\item Users know basic knowledge to use chat features and are familiar with instant messaging.
+	\item The legal consequences of a such a cross service implementation of the targeted service providers’ services are not taken into consideration. 
+	\item As this is a non-profit experiment, it is made with no other intention other than for educational purposes.
+	\item That the hardware required by the system is already present.
+	\item A further assumption is that the computer being used can understand and interpret the programming of the software.
+\end{itemize}
+Following are the dependencies of the system:-
+\begin{itemize}
+	\item The product depends highly on the interfaces provided by the providers targeted. If any change in the interface’s code, implementation, availability or policy is made, the product will be left non-functioning.
+\end{itemize}
+\newpage
+
+\section{System features}
+\begin{itemize}
+	\item Instant Messaging
+		\begin{itemize}
+			\item Send and recieve instant messages using associated accounts.
+			\item Search for friends in friend list (roster list) and start conversation
+		
+		\end{itemize}
+		\item Add Multiple accounts
+		\begin{itemize}
+			\item Add user accounts from multiple services like Facebook, Google. \\ User can also add multiple accounts from the same service provider.
+			\item Logout from one account or all at once.
+			
+		\end{itemize}
+\end{itemize}
+
+\subsection{External Interface Requirements}
+\subsubsection{User Interface}
+\hspace{0.5 in}User interface screen will ask for user name and password which the user will require to acquire from the service provider individually and separately in which he needs to access the application.
+\subsubsubsection{Desktop}
+The interface is purely window toolkit based and thus will require the compatible operating system interface interaction. The chat window will provide with a simple window to send and recieve messages. A separate window for every user is created. The friend list or roster is displayed in another window which is scrollable and will require the scrolling components to be supported by the operating system.
+\subsubsubsection{Android}
+\hspace{0.5 in}Any android version will be supported as long as the normal scrolling and touch interfaces work properly. The menu can be accessed by pressing the menu button which needs to be a soft button or hardware button. No separate button is provided on the interface. 
+\subsubsection{Hardware Interface}
+\subsubsubsection{Desktop}
+\hspace{0.5 in}Mouse and display are the basic requirements. Mouse with a scrolling wheel/hardware button is preferable but a scroll bar is provided nevertheless. Display can be basic and black and white but a colour display is preferred for status information display.
+\subsubsubsection{Android}
+\hspace{0.5 in}Hardware or soft menu button is required to access the settings menu to add/remove accounts and access other configuration. A separate interface mechanism is not provided to keep the  interface clear and uncluttered.
+\subsubsection{Software Interfaces}
+\subsubsubsection{Desktop}
+\hspace{0.5 in}The interface is purely window toolkit based and thus will require the compatible operating system interface interaction. The chat window will provide with a simple window to send and receive messages. A separate window for every user is created. The friend list or roster is displayed in another window which is scrollable and will require the scrolling components to be supported by the operating system.
+\subsubsubsection{Android}
+\hspace{0.5 in}Any android version will be supported as long as the normal scrolling and touch interfaces work properly. The menu can be accessed by pressing the menu button which needs to be a soft button or hardware button. No separate button is provided on the interface. 
+\subsubsection{Communication Interfaces}
+\hspace{0.5 in}Both the platforms need a working internet connection for the application to work. The  communication is done through the port 5222 and the user should have the permission to use the port over that connection.
+\subsubsubsection{Android}
+\hspace{0.5 in}The application contacts the server with the user name and password and starts a session for the chat. If the internet connection is slow/ low bandwidth as in 2G connections, the session time out may occur and re-login may be required. Therefore speeds should be sufficient for working. In testing we observed that connection timeouts do acquire when a bandwidth intensive application is running in the background. Closing it may help in such cases.
+
+\newpage
+
+
+\section{Non-Functional Requirements}
+
+\subsection{Performance Requirements}
+\begin{itemize}
+	\item The resource consumption should be minimized.
+	\item The total resource utilization has to be lesser than the sum of the individual clients provided by the service providers. 
+	\item User interface must be very friendly & self descriptive.
+\end{itemize}
+\subsection{Safety Requirements}
+\begin{itemize}
+\item Unauthorised access should not be possible. 
+\item Proper timeouts should be put in place to control session logouts.
+\item Passwords should not be stored or transmitted in plain text format.
+\end{itemize}
+\subsection{Security Requirements}
+\begin{itemize}
+\item The users data should not be compromised in any manner and necessary checks should be implemented. If needed, a basic encryption algorithm to locally store passwords can be implemented, without compromising on the performance requirements.
+\item Data is accepted and encoded in UTF8 format and immediately transferred over a secure TLS connection. Thus no third party is access is allowed.
+\item None of the sensitive data is stored anywhere thus giving better security overall.
+\end{itemize}
+\subsubsection{Desktop}
+\hspace{0.5 in}As of now, in this version, no passwords are stored in any file. But a user side security precatutions are suggested nevertheless. Passwords may be saved in plain text and encryption and decryption if implemented will require further computing. 
+\subsubsection{Android}
+\hspace{0.5 in}The passwords are stored in a hidden file the data folder. Also, accounts once added are saved and signed into at every startup. Loss of the device may grant access to unauthorised persons directly to the chat. Passwords can also be seen from the settings menu. Therefore, direct access is possible. Necessary precautions should be taken by the user to avoid this.
+
+\subsection{Software Quality Assurance}
+Software should have following quality attributes:
+\begin{enumerate}
+	\item {\textbf{Usability}: The system should be user friendly and self-explanatory. Since all users are familiar with the general usage of computers and instant messaging is also fairly common, no specific training should be required to operate the system.}
+	\item{\textbf{Correctness}: The application is needed to be very correct while associating the accounts and displaying incoming messages to proper chat windows.}
+	\item{\textbf{Portability and flexibility}: It should be flexible and portable enough to be used on any system.}
+	\item{\textbf{Reliability}: The system is reliable as its accuracy depends on the database of the service providers directly. Apart from this, the system should be highly Robust and easily Testable.}
+\end{enumerate}
+\newpage
+
+\section{System Design Diagrams}
+
+%\subsection{Data Flow Diagram} 
+%\begin{itemize}
+%	\item DFD: LEVEL 0: A context diagram is a top level (also known as level 0) Data Flow  Diagram. It only contains one process node(process 0) that generalizes the function of the entire system in relationship to external entities.
+
+\subsection{Use case Diagram}
+ It shows the set of use cases and actors (special kind of the class and their relationship).Use case diagram addresses the static use case of the system. These diagrams are especially important in organizing and modeling the behavior of a system. \\ \\ \\
+
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./myimg/usecase1.jpg}}%
+\caption{Use Cases for user with existing accounts with service providers}%
+\label{Use Cases for the user with existing accounts}%
+\end{figure}
+\\
+\\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./myimg/usecase1.jpg}}%
+\caption{Use Cases for users with no existing accounts with service providers}%
+\label{Use Cases for the System}%
+\end{figure}
+
+\newpage
+
+\subsection{Class Diagram}
+A class diagram is a type of static structure diagram that describes the structure of a system by showing the system’s classes, their attributes, operations or methods and the relationships between the classes. \\ \\ 
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./myimg/class.jpg}}%
+\caption{System Class Diagram}%
+\label{System Class Diagram}%
+\end{figure}
+
+\newpage
+
+\subsection{Activity Diagram }
+It is  graphical representations of workflows of stepwise activities and actions with support and operational step-by-step workflows of components in a system.\\ \\ \\
+
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./myimg/activity.jpg}}%
+\caption{Admin Activity Diagram}%
+\label{Activity Diagram}%
+\end{figure}
+
+
+\newpage
+\subsection{Sequence Diagram}
+ A sequence diagram shows the time-ordering of message. It actually gives you the step by step flow of the system. It is dependent on time.\\ \\
+
+ \begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.45]{./myimg/sequence.jpg}}%
+\caption{Sequence Diagram}%
+\label{Sequence Diagram}%
+\end{figure}
+
+\newpage
+\subsection{Component Diagram}
+A component diagram shows the components within the system. \\ \\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./myimg/component.jpg}}%
+\caption{Component Diagram}%
+\label{Component Diagram}%
+\end{figure}
+\newpage
+\subsection{Composite Structure Diagram}
+Composite structure diagram in the Unified Modeling Language (UML) is a type of static structure diagram, that shows the internal structure of a class and the collaborations that this structure makes possible.\\ \\ \\
+
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./myimg/composite.jpg}}%
+\caption{Composite structure Diagram}%
+\label{Composite Structure Diagram}%
+\end{figure}
+\newpage
+
+\subsection{Component Diagram}
+ A component diagram depicts how components are wired together to form larger components and or software systems. They are used to illustrate the structure of arbitrarily complex systems.\\ \\ \\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./myimg/component.jpg}}%
+\caption{Component Diagram}%
+\label{Component Diagram}%
+\end{figure}
+\newpage
+
+\subsection{Deployment Diagram}
+ A deployment diagram in the Unified Modeling Language models the physical deployment of artifacts on nodes. \\ \\ \\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./myimg/deployment.jpg}}%
+\caption{Deployment Diagram}%
+\label{Deployment Diagram}%
+\end{figure}
+\newpage
+
+\chapter{System's Software implementation}
+
+
+\section{Introduction}
+\hspace{0.5 in} This chapter describes the implementation part of our application. It comprises of system components, the externally visible properties of those components, the relationships (e.g. the behavior) between them. It can provide a plan from which products can be procured, and systems developed, that will work together to implement the overall system.
+\\
+\newpage
+
+\section{System Architecture}
+\hspace{0.5 in}System architecture is the conceptual model that defines the structure, behavior, and more views of a system. An architecture description is a formal description and representation of a system, organized in a way that supports reasoning about the structures of the system.
+\\
+%\subsection{Sequence Diagram}
+% A sequence diagram shows the time-ordering of message. It actually gives you the step by step flow of the system. It is dependent on time.\\ \\
+\begin{figure}[h]%
+\centering
+ \subfloat{\includegraphics[scale=0.5]{./myimg/architecture.jpg}}%
+\caption{System Architecture}%
+\label{MUC client server architecture}%
+\end{figure}
+\\
+\hspace{0.5 in} The above system architectural diagram can be explained as follows:
+\begin{enumerate}
+ \item The user logs in and sends a reqest through the middleware to the service provider server. 
+ \item The server checks for authentication and respondes with the session id if found correct.
+ \item The user requests for the roster or friend list from the server.
+ \item The server respondes with the friend list.
+ \item User selects from friend list a user and starts a chat session. Depending on the account selected, the corresponding chat server and database are invoked and used for the instant messaging session.
+ \item Reciever gets the message from the device and service he has logged in without any knowledge of the middleware.
+\end{enumerate}
+\\
+\hspace{0.5 in} This is the overall system architecture.
+\\
+\newpage
+
+\section{Project estimate, Schedule and Team structure}
+
+\hspace{0.5 in}It is defined as to form an approximate notion of the amount, magnitude or position of anything, without actual enumeration or measurement.
+\\
+
+\subsection{Project Estimates}
+\hspace{0.5 in}The following estimates were made during the course of the project:
+\begin{enumerate}
+ \item \textbf{Time} \\ Time estimates are used in scheduling work, assigning resources and determining delivery dates. In our project we kept a timeline unit of 1 month per module development.
+ \item \textbf{Cost} \\Cost and benefit estimates are used in cost/benefit analysis to determine the overall viability of a project.
+ \item \textbf{Effort}\\In our project we have estimated upto 400 working hours, the duration will depend on the resources we apply. In this project,since two of us were working on it, the effort can be predicted to be two months or less.
+ \item \textbf{External factors and costs}\\ Being a sponsored project from Persistent Systems, Ltd. we would visit the Persistent Systems facility every week. The mentors would review the current status and then guide us with the further development process. 
+ 
+\end{enumerate}
+
+\subsection{Schedule}
+\hspace{0.5 in}In project management, a schedule is a listing of a project’s milestones, activities, and deliverables, usually with intended start and finish dates.Those items are often estimated in terms of resource allocation, budget and duration, linked by dependencies and scheduled events. A schedule is commonly used in project planning and project portfolio management parts of project management. Elements on a schedule may be closely related to the Work Breakdown Structure (WBS) terminal elements, the Statement of work, or a Contract Data Requirements List.
+\\
+\newpage
+
+\begin{enumerate}
+ \item \textbf{Phase 1} \\Planning and designing. This was the core module design Most of the work was done in last term.
+ \item \textbf{Phase 2}\\Work on Desktop Module was started and planned to be finished in this phase. Targeted milestone: 17th februray, 2014 
+ \item \textbf{Phase 3}\\Work on Android or Web based Module was started and planned to be finished in this phase. Targeted milestone: 3 March, 2014
+\item \textbf{Phase 5}\\Work on Android Module was started and planned to be finished in this phase. Targeted milestone: 17 March, 2014
+ \item \textbf{Phase 5}\\Documentation and report generation. Analysis and testing were also to be carried out in this phase. Targeted Milestone: 27 March, 2014 \\
+ 
+\end{enumerate}
+
+\newpage
+
+\subsection{Team structure}
+\hspace{0.5 in} are a composition of people whose talents complement each other. Two or more people make up a team whose main objective is to reach a common unilateral goal as identified through a common source. This source could be a coach, your boss, or a teacher. Teams work in various contexts and are not identified in only one facet. Characteristics are easily
+identified as norms, size, and roles. 
+\hspace{0.5 in}Team structure can be seen as a ”bridge between organization-level strategy
+and staffing decisions”. Team structure is an essential element in establishing guidance for team composition. It is helpful to consider the desired composition of the team when deciding which type of structure will be used to unite team members. Teams have great difficulty in working
+effectively if they are too large to work together conveniently. In our organization, the project needs more staff or volunteers to deliver all of the outcomes, the structure could consist of a number of teams, each with a team leader.
+\hspace{0.5 in}At this stage, the roles will be identified in terms of the expertise or skills that are needed to complete each of the main tasks. Where members need to be recruited to the team, this process will help to identify the criteria for selection. In our project,the team leaders have been appointed, there is an opportunity to include them in determining the team structure. The key responsibilities can also be allocated.
+\\
+\hspace{0.5 in}\textbf{Team actions performed:}\\
+\begin{enumerate}
+\item Assemble a team
+\item Establish a leader
+\item Identify the teams goals and vision
+\item Assign roles and responsibilities
+\item Hold team members accountable
+\item Actively share information among team members
+\item Provide feedback
+\end{enumerate}
+\newpage
+\section{Module Description}
+
+\subsection{Module 1:The Core component}
+\\
+\hspace{0.5 in}Here the basic implementation of the specification as given the RFC 6120 of XMPP is provided. It will provide the basic functionality for the XMPP client to connect with any standard XMPP based service provider.
+\subsubsection{RFC 6120 Core Functionality}
+\hspace{0.5 in}The purpose of XMPP is to enable the exchange of relatively small pieces of structured data (called "XML stanzas") over a network between any two (or more) entities. XMPP is typically implemented using a distributed client-server architecture, wherein a client needs to connect to a server in order to gain access to the network and thus be allowed to exchange XML stanzas with other entities (which can be associated with other servers). An XMPP based messaging system works as follows: 
+\\
+\begin{enumerate}
+ 
+ \item \textbf{Open stream}\\
+ \textb{Client:} Clients send an open stream packet to server to request a new session.\\
+ \textb{<stream:stream to='example.com' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>}\\
+where “example.com” is domain name of XMPP server connected to.\\
+\textbf{Server:}Server sends back an XML stream which starts with <stream:freatures>, includes requirements of either TLS or SASL negotiation, or both.
+\\
+\textbf{<stream:features><starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'> <required/> </starttls> <mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>DIGEST-MD5</mechanism> <mechanism>PLAIN</mechanism><mechanism>EXTERNAL</mechanism></mechanisms> </stream:features>}
+
+\item \textbf{Encryption and Authorization}\\
+\textbf{SASL negotiation}\\
+Client needs to choose anauthentication method available from server to carry out SASL negotiation. In case above, “DIGEST-MD5“, “PLAIN” and “EXTERNAL” are options.
+The “PLAIN” authorization method is the simplest among them. It works as following.
+\\
+\textbf{Client:}Client send a stream with selected authorization method with base64 encoded user name and password. The user name and password are allocated in format of “\0UserName\0Password”. Then, the client sends the following stream to server.
+\\
+\textbf{<auth xmlns='urn:ietf:params:xml:ns:xmpp-sasl' mechanism='PLAIN'>AG1iZWQAbWlycm9y</auth>}
+\\
+\textbf{Server:}If the server accept the authorization, it sends back a stream with “success” tag.
+\\\textbf{<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>}
+\\
+or
+\\
+\textbf{Server:} If the password does not match the user name, or there is an error on encoding, the server will sends a failure stream.
+\\
+\textbf{<failure xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>}
+\\
+
+\item \textbf{Resource binding (Optional)}
+\\
+\textbf{Client:}Client asks server to bind a resource:
+\\
+\textbf{<iq type='set' id='bind_1'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/></iq>}
+\\
+or
+\\
+\textbf{Client:}Client binds a resource:
+\\
+\textbf{<iq type='set' id='bind_2'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><resource>someresource</resource></bind></iq>}
+\\
+\textbf{Server:}Server sends back another <iq> stanza, if the “type” tag is “result”, that means the binding is successful, otherwise, it is failed.
+\\
+\textbf{<iq type='result' id='bind_2'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><jid>somenode@example.com/someresource</jid></bind></iq>}
+\\
+\item \textbf{Request a new session}
+\\Immediately after SASL negotiation and/or optional resource binding, clients must establish a session to start instant messaging.
+\\
+\textbf{Client:}Client request session with server:
+\\
+\textbf{<iq to='example.com' type='set'id='sess_1'><session xmlns='urn:ietf:params:xml:ns:xmpp-session'/></iq>}
+\\
+\textbf{Server:}Server sends back a iq stanza showing whether session has been created successful or not.
+The successful message will be like:
+\\
+\textbf{<iq from='example.com' type='result'id='sess_1'/>}
+\\
+If the server failed to create a session, it will reply a message like below or other type of error messages.
+\\
+\textbf{<iq from='example.com' type='error' id='sess_1'><session xmlns='urn:ietf:params:xml:ns:xmpp-session'/><error type='auth'><forbiddenxmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></iq>}
+\\
+
+\item \textbf{Client and server exchange XMPP stanzas}\\
+If all steps above are successful, then client can send XMPP stanzas to server and receive XML streams. Client can send <iq> stanzas to request roster or other information from server, and use<presence>stanzas to change its presence status. Instance message and other payload can be send via<message>stanzas.
+
+\item \textbf{Close stream}\\
+Finally, if clients want to finish the talk and close the XMPP session, it needs to send a close stream to server.
+\textbf{<presence type='unavailable'/></stream:stream>}
+\\
+Then, server will change client's presence to “Offline” and close TCP connections with clients.
+\\
+
+\end{enumerate}
+
+
+
+\subsection{Module 2: Functional Module}
+\hspace{0.5 in}The functional module will make the required calls to follow the above described control flow for authorisation and message exchange using XML stanzas. The actual calls  do not generally deal at the XML level unless a specific functionality requires so.
+\\
+\subsubsubsection{Basic functionality provided}
+\\
+ \item The application will be able to provide the following basic functionality:
+\begin{itemize}
+ \item Connect and authenticate to the service providers,
+ \item Send and recieve messages,
+\item Login to multiple service providers at a single time,
+\item See a unified roster from multiple service providers. 
+\end{itemize}
+
+
+\subsection{Module 3:Graphical User Interface Module}
+\hspace{0.5 in}The user will interact with the application using the graphical interface provided using this module. This module will be developed on per platform basis keeping in mind the platform constraints and interfacing mechanisms. 
+\\
+
+
+\section{Business Logic and Architecture}
+\hspace{0.5 in}The logic and working is similar but having some changes due to the different interfaces of Desktop and Android. They can be described as follows:
+\subsection{Desktop}
+\begin{enumerate}
+ \item User opens the application and selects the service provider among Facebook or Google to initiate the login process.
+ \item The user is asked for user name and password. On unsuccessful login, a error message is displayed. The user can then reenter the login information.
+ \item On successful login, the friend list is shown with a search box the window. The list is alphabetically sorted. 
+ \item The user can then add another account using the button at the top, which asks for the details of the other account to be added.
+ \item The user can also directly start chatting with the friends displayed in the friend list. A separate chat window is opened for every friend on clicking the name.
+ \item The chat window is simple in design and to use and provides a text box to enter text, a button to send the message and a text field to display the conversation.
+ \item At any time the user can opt to logout of the application using the button at the top. 
+\end{enumerate}
+
+\subsection{Android}
+\begin{enumerate}
+ \item The user opens the application and taps the button at the top to enter settings and configuration activity.
+ \item The user will have to enter the appropriate user name and password along with the service provider to be used.
+ \item On successful connection, the user can enter the id of the user to chat with.
+ \item The touch based interface then opens the system keyboard to enter text and tap the send button to send the message.
+ \item The conversation will be displayed along with the timestamps above the text field. 
+  \item The user can change the id to chat with at any time.
+ \item The user can change the settings to login to another service provider.
+ \item The user can simply exit by clicking the back button or the home button. The session is automatically closed.
+\end{enumerate}
+
+\chapter{Testing}
+
+\section{System Testing}
+\hspace{0.5 in}Software testing is an important technique for assessing the quality of a software product. Software testing is the process of analyzing a software item to detect the differences between existing and required conditions (that is, bugs) and to evaluate the features of the software item. Software testing is an activity that should be done throughout the whole development process. Software testing is one of the verification and validation , software practices. Verification is the process of evaluating a system or component to determine whether the products of a given development phase satisfy the conditions imposed at the start of that phase. Verification activities include testing and reviews. Validation is the process of evaluating a system or component during or at the end of the development process to determine whether it satisfies specified requirements.
+\subsection{Testing Strategies}
+\hspace{0.5 in}Software Testing Strategies should follow generic characteristics: Testing begins at module level and works outward toward the integration of the entire computer base system. Different testing techniques are applied at each point. Testing is conducted by developer of software. Testing challenges the assumptions, risks and uncertainty inherent the work of the other disciplines, addressing those concerns by concrete demonstration and impartial evaluation. First testing software is enormously difficult. The different ways a given program can behave are unquantifiable. Second, testing is typically done without a clear methodology so results vary from project to project. A strategy for software testing begins with Unit Testing.
+\\
+\subsection{Testing Objectives}
+\hspace{0.5 in}
+The purpose of testing is to uncover the errors in the software. The objective behind testing is to correct and rectify the errors that are present in the current work product. There are certain rules of testing that can serve as testing objectives:
+\begin{itemize}
+\item Testing is the process of executing the program with the intent of finding errors.
+\item A good test is the one which has higher probability of finding an error.
+\item A successful test is the one which uncovers a yet undetected error.
+\end{itemize}
+\\
+
+\section{Unit Testing}
+\hspace{0.5 in}It concentrates on each unit of software as implemented in source code. Unit testing focuses verification effort on the smallest unit of software design the software component or module. Using the component-level designed description as a guide, important control path are tested to uncover error is limited by constrained for unit testing. The unit testing is white-box oriented, and the step can be conducted in parallel for multiple components. Unit testing is normally considered as an adjunct to the coding step. After source level code has been developed, reviewed, and verified for correspondence to component-level designed, unit rest design begins. Each test case should be coupled with a set to expected results.
+\\
+\hspace{0.5 in} Testing process progresses by moving to Integration testing, where the focus is on the design and construction of software design. Next Validation Testing is encountered, where requirements established as part of project requirement analysis are validated against the project that has been constructed. Finally we arrived at System Testing, where project and other system elements are tested as a whole.
+
+\subsection{White Box Testing}
+\hspace{0.5 in}White box testing (also called structural testing and glass box testing) which focuses on the inner structure of the software to be tested. Tester must have knowledge of the structure. Using White box testing methods, the software engineer can derive test cases that:
+\\
+\begin{itemize}
+ \item Guarantee that all independent paths within a module have been exercised at least once.
+\item Exercise all logical decisions.
+\item Execute all loops at their boundaries and in their operational bounds.
+\item Exercise internal data structures to maintain their validity.
+\end{itemize}
+
+\subsection{Black Box Testing}
+\hspace{0.5 in} box testing (also called functional testing) is testing that ignores the internal mechanism of a system or component and focuses solely on the outputs generated in response to selected inputs and execution conditions. It enables the software engineer to derive sets of input conditions that will fully exercise all functional requirements for a program. Using Black box approach, a tester considers the software-under-test to be an opaque box. There is no knowledge of its inner structure. The tester only has knowledge of what it does. The size of the software-under-test using this approach can vary from a simple module, member function, or subsystem to a complete system.
+\\
+Characteristics of Black-box testing:
+\begin{itemize}
+\item Program is treated as a black box.
+\item Implementation details do not matter.
+\item Requires an end-user perspective.
+\item Criteria are not precise.
+\item Test planning can begin early. 
+\end{itemize}
+
+\hspace{0.5 in}After a system has been successfully built, it becomes necessary to test it prior to deployment. Informally, Software Testing can be defined as the process of exercising a program with the specific intent of finding errors prior to delivery to the end user. The main purpose of Testing is to:
+\begin{itemize}
+ \item Debug and rectify errors in the product.
+\item See that the product built conforms to the requirements specified.
+\item Ensure that the product meets certain performance requirements.
+\item It is also an indication of quality of the product.
+\end{itemize}
+
+
+\chapter{Code Snippet}
+
+\subsection{Welcome Screen}
+\begin{lstlisting}
+    public class Start extends javax.swing.JFrame {
+
+    Login login;
+    public Start() {
+        initComponents();
+    }
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+    
+	    dispose();
+		login=new Login();
+	    login.main("talk.google.com");
+    }
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        
+       	dispose();
+		login=new Login();
+        login.main("chat.facebook.com");
+    }
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+        System.exit(0);
+    }
+    
+    public static void main() {
+    
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Start().setVisible(true);
+            }
+        });
+    }
+}
+\end{lstlisting}
+\newpage
+
+\subsection{Login Window}
+\begin{lstlisting}
+public class Login1 extends javax.swing.JFrame {
+
+     XMPPConnection connection;
+     ConnectionConfiguration config;
+     Chatlist chatList;
+     String server="chat.facebook.com";
+    /**
+     * Creates new form Login1
+     */
+    public Login1() {
+        initComponents();
+    }
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        config = new ConnectionConfiguration(server,5222, "Work");
+        connection = new XMPPConnection(config);
+
+        try
+        {String pass11=new String(jPasswordField1.getPassword());
+            connection.connect();
+            connection.login(jTextField1.getText(),pass11);
+
+        }
+        catch (XMPPException e)
+        {
+            JOptionPane.showMessageDialog(null,"Please enter valid Credentials","Invalid Login",JOptionPane.WARNING_MESSAGE );
+            this.main();
+            dispose();
+            e.printStackTrace();
+        }
+
+        if(connection.isAuthenticated()){
+                dispose();
+			    chatList=new Chatlist(connection);
+			    chatList.main(connection);
+                        }
+    }
+    
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {
+        if(jComboBox1.getSelectedItem().toString().compareTo("Facebook")==0)
+            server="chat.facebook.com";
+        else if(jComboBox1.getSelectedItem().toString().compareTo("Google")==0)
+            server="talk.google.com";
+        
+    }
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+        hide();
+    }
+
+    public void main() {
+       /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Login1().setVisible(true);
+            }
+        });
+    }
+\end{lstlisting}
+
+\newpage
+
+\subsection{Login Function}
+\begin{lstlisting}
+public class Login extends javax.swing.JFrame {
+    /**
+     * Creates new form Login
+     */
+    XMPPConnection connection;
+    ConnectionConfiguration config;
+    static String server;
+    Chatlist chatList;
+    public Login() {
+        initComponents();
+       getRootPane().setDefaultButton(jButton1);
+        
+    }
+  
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {         
+    	config = new ConnectionConfiguration(server,5222, "Work");
+		connection = new XMPPConnection(config);
+			  
+		try{
+			String pass11=new String(jPasswordField1.getPassword());
+			connection.connect();
+			connection.login(jTextField1.getText(),pass11);
+        } 
+        catch (XMPPException e){
+					
+        	JOptionPane.showMessageDialog(null,"Please enter valid Credentials","Invalid Login",JOptionPane.WARNING_MESSAGE );
+            this.main(server);
+            dispose();
+			e.printStackTrace();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+	  	}
+        if(connection.isAuthenticated()){
+            dispose();
+		    chatList=new Chatlist(connection);
+		    chatList.main(connection);
+        }
+    }
+  	public static void main(String server1) {
+       server=server1;
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Login().setVisible(true);
+            }
+        });
+    }
+\end{lstlisting}
+
+\newpage
+
+\subsection{Chat Window}
+\begin{lstlisting}
+public class chatWin extends javax.swing.JFrame implements MessageListener{
+
+    static Chat chat;
+    static XMPPConnection connection;
+    static String user,Name;
+    /**
+     * Creates new form chat
+     */
+    public chatWin() {
+        initComponents();
+        getRootPane().setDefaultButton(jButton1);
+        setTitle(Name);
+        jTextField1.requestFocus();
+        chat=connection.getChatManager().createChat(user, this);
+        connection.getChatManager().addChatListener(new ChatManagerListenerImpl());
+    }
+    @Override
+    public void processMessage(Chat chat, Message message) {
+
+       String msg;
+	 if(message.getType() == Message.Type.chat){
+         if(message.getBody()!=null){
+        	msg=Name+":"+message.getBody()+System.getProperty("line.separator");
+        	jTextArea1.append(msg);
+       	}
+     }
+        
+}
+    
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+      try
+        {
+        String message=jTextField1.getText()+System.getProperty("line.separator");
+        jTextField1.setText("");
+        chat.sendMessage(message);
+        jTextArea1.append("Me:"+message);
+        }
+       
+}
+public static void main(XMPPConnection connection1,String user1,String name) {
+       connection=connection1;
+       user=user1;
+       Name=name;
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new chatWin().setVisible(true);
+            }
+        });
+}
+\end{lstlisting}
+
+
+\newpage
+
+\subsection{Incoming Message Listener}
+\begin{lstlisting}
+public class myMessageListener implements MessageListener {
+@Override
+	public void processMessage(Chat chat, Message message) {
+    	String from = message.getFrom();
+    	String body = message.getBody();
+	}
+}
+\end{lstlisting}
+
+\subsection{Roster Window}
+\begin{lstlisting}
+ public Chatlist(XMPPConnection connection1) {
+       connection=connection1;
+       displayBuddyList();
+       initComponents();
+ }
+ 
+ public void displayBuddyList(){
+	
+	Roster roster = connection.getRoster();
+	Collection<RosterEntry> entries = roster.getEntries();
+
+	for(RosterEntry r:entries)
+	    listModel.add(r.getName());
+}
+\end{lstlisting}
+
+	
+\chapter{Results and Output}
+
+This chapter will show the output of our project and the screenshots of both desktop and android applications. 
+
+\section{Desktop Application}
+
+\begin{figure}[h]%
+\centering
+\includegraphics[scale=0.5]{./myimg/d0.jpg}
+\caption{Startup Screen}%
+\label{Startup Screen}%
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{./myimg/d1.jpg}
+\caption{User login screen}%
+\label{User login screen}%
+\end{figure}
+
+\begin{figure}[h]%
+\centering
+\includegraphics[scale=0.5]{./myimg/d1.jpg}
+\caption{User login screen}%
+\label{User login screen}%
+\end{figure}
+
+\begin{figure}[h]%
+\centering
+\includegraphics[scale=0.5]{./myimg/d2.jpg}
+\caption{Roster list}%
+\label{Roster list}%
+\end{figure}
+
+\begin{figure}[h]%
+\centering
+\includegraphics[scale=0.5]{./myimg/d3.jpg}
+\caption{Add another account}%
+\label{Add another account}%
+\end{figure}
+
+
+\begin{figure}%
+\centering
+\includegraphics[scale=0.5]{./myimg/d4.jpg}
+\caption{Chat window}%
+\label{Chat window}%
+\end{figure}
+
+
+\begin{figure}[h]%
+\centering
+\includegraphics[scale=0.5]{./myimg/a0.jpg}
+\caption{Settings screen in android}%
+\label{Settings screen in android}%
+\end{figure}
+
+\begin{figure}[h]%
+\centering
+\includegraphics[scale=0.5]{./myimg/a1.jpg}
+\caption{Chat window in android}%
+\label{Chat window in android}%
+\end{figure}
+
+
+\newpage
+\chapter{Conclusion and Future Scope}
+\section{Advantages, Disadvantages, Appications}
+\subsection{Advantages}
+The advantages of using this software are :
+\begin{itemize}
+
+\item Cross platform solution.
+\item Multiple service providers can be clubbed and accessed from single interface.
+\item Single point sign in.
+\item Multiple contact lists merged or sorted into one.
+\item Easier IM/communcication for the user with basic uniform functionality.
+\item Save resources like memory, space, bandwidth and processing power.
+\item Ease of access to all connections from a unified list.
+\end{itemize}
+\subsection{Disadvantages}
+\hspace{0.5 in} Propably the only disadvangtage is the stripped down functionality which has been done purposefully to keep a simple and uniform interface and working mechanism to avoid confusion for the user. So it is a design necessity.\\
+\subsection{Applications}
+\begin{itemize}
+ \item In environments where proprietary XMPP based protocols are used. This application can be useful for users to communicate from the desktop and android platforms by connecting to the server of their choice.
+ \item In day to day users instant messaging solutions to avoid the use of multiple clients and softwares for different service providers. 
+ \item As the core module is XMPP based which is in turn XML based, lot of data traffic is not needed for this application. On the other hand, full fledge softwares and clients may need lots of bandwidth and resources to connect and perform their work. Thus this application can also be used in environments with restricted internet speeds and accesses and on systems with restricted resources.
+\end{itemize}
+
+\section{Conclusion}
+\hspace{0.5 in}The current implementation caters only to the core functionality of instant messaging. Also, the focus has been on providing a cross platform solution. The extension is to check whether the same solution can be easily ported to the Android platform without writing the whole code from the scratch. Thus resources are saved by this implementation and can definetely be useful for the above described applications and scenarios.
+
+\section{Future Scope}
+\begin{itemize}
+ \item For scaling this further, future enhancements and changes can be added as and when needed.
+\item With better connectivity and access to the internet, video and audio conferencing has become quite feasible. 
+\item With better speeds insant messaging is no longer the de facto of communication. Instead, for easier and more direct approach, multimedia has been used more and more commonly these days. This can be implemented in the future. 
+\item Furthermore, additional service providers can be brought under the same umbrella by implementing their protocols  to solve the above said shortcomings. Protocols not directly providing any XMPP interfacing over their proprietary protocols can be targeted. Thus, this can also   be targeted as a further development course for the same implementation.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Appendix A}
+
+\section{Android Platform}
+
+\hspace{0.5 in}Android is an open source and Linux-based Operating System for mobile devices such as Smartphone and tablet computers. Android was developed by the Open Handset Alliance, led by Google, and other companies. Android offers a unified approach to application development for mobile devices which means developers need only develop for Android, and their applications should be able to run on different devices powered by Android. The first beta version of the Android Software Development Kit (SDK) was released by Google in 2007 where as the first commercial version, Android 1.0, was released in September 2008.
+\hspace{0.5 in}Android applications are usually developed in the Java language using the Android Software Development Kit. Once developed, Android applications can be packaged easily and sold out either through a store such as Google Play or the Amazon Appstore. Android powers hundreds of millions of mobile devices in more than 190 countries around the world. It's the largest installed base of any mobile platform and growing fast. Every day more than 1 million new Android devices are activated worldwide. This tutorial has been written with an aim to teach you how to develop and package Android application. We will start from environment setup for Android application programming and then drill down to look into various aspects of Android applications.
+
+
+\subsection{Dalvik Virtual Machine}
+\hspace{0.5 in}The Android system uses a special virtual machine, i.e. the Dalvik Virtual Machine to run Java based applications. Dalvik uses an own bytecode format which is different from Java bytecode. Therefore you cannot directly run Java class files on Android, they need to get converted in the Dalvik bytecode format.
+
+\subsection{Android SDK}
+\hspace{0.5 in} The Android Software Development Kit (SDK) contains the necessary tools to create, compile and package Android application. Most of these tools are command line based. The Android SDK also provides an Android device emulator, so that Android applications can be tested without a real Android phone. You can create Android virtual devices (AVD) via the Android SDK, which run in this emulator. The Android SDK contains the Android debug bridge (adb) tool which allows to connect to an virtual or real Android device.
+
+\subsection{Android Development Tools}
+\hspace{0.5 in}Google provides the Android Development Tools (ADT) to develop Android applications with Eclipse. ADT is a set of components (plug-ins) which extend the Eclipse IDE with Android development capabilities. ADT contains all required functionalities to create, compile, debug and deploy Android applications from the Eclipse IDE. ADT also allows to create and start AVDs.
+The Android Development Tools (ADT) provides specialized editors for resources files, e.g. layout files. These editors allow to switch between the XML representation of the file and a richer user interface via tabs on the bottom of the editor.
+\\  
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.35]{./myimg/adt.jpg}}%
+\caption{Composite structure Diagram}%
+\label{Composite Structure Diagram}%
+\end{figure}
+\newpage
+
+\section{Java}
+\hspace{0.5 in}Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
+Java is: 
+\begin{itemize}
+ \item  Oriented: In Java, everything is an Object. Java can be easily extended since it is based on the Object model. 
+\item Platform independent: Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by virtual Machine (JVM) on whichever platform it is being run. 
+\item Simple: Java is designed to be easy to learn. If you understand the basic concept of OOP ,Java would be easy to master. 
+\item Secure: With Java's secure feature, it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption. 
+\item Architectural- neutral: Java compiler generates an architecture-neutral object file format, which makes the compiled code to be executable on many processors, with the presence of Java runtime system. 
+\item Portable: Being architectural-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler inJava is written in ANSI C with a clean portability boundary which is a POSIX subset. 
+\item Robust: Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking. 
+\item Multithreaded: With Java's multithreaded feature, it is possible to write programs that can do many tasks simultaneously. This design feature allows developers to construct smoothly running interactive applications. 
+\end{itemize}
+
+\subsection{Eclipse IDE}
+\hspace{0.5 in}Eclipse is an integrated development environment (IDE). It contains a base workspace and an extensible plug-in system for customizing the environment. Written mostly in Java, Eclipse can be used to develop applications. By means of various plug-ins, Eclipse may also be used to develop applications in other programming languages: Ada, ABAP, C, C++, COBOL, Fortran, Haskell, JavaScript, Lasso, Natural, Perl, PHP, Prolog, Python, R, Ruby (including Ruby on Rails framework), Scala, Clojure, Groovy, Scheme, and Erlang. It can also be used to develop packages for the software Mathematica. Development environments include the Eclipse Java development tools (JDT) for Java and Scala, Eclipse CDT for C/C++ and Eclipse PDT for PHP, among others.
+\hspace{0.5 in}Released under the terms of the Eclipse Public License, Eclipse SDK is free and open source software (although it is incompatible with the GNU General Public License[3]). It was one of the first IDEs to run under GNU Classpath and it runs without problems under IcedTea.
+\\ \\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.35]{./myimg/eclipse.jpg}}%
+\caption{Composite structure Diagram}%
+\label{Composite Structure Diagram}%
+\end{figure}
+\newpage
+
+\section{Basics of the Message Oriented Architecture of Middleware}
+\hspace{0.5 in}Service-oriented architecture (SOA)
+aims to interconnect distributed, loosely
+coupled, and interoperable components
+of software owned or provided by
+different domains. For example, many
+applications
+and
+heterogeneous
+platforms require a process flow of
+communication to solve interoperability
+problem in cross-platform systems [1].
+Thus,
+insuring
+an
+interoperable
+communication between cross-platform
+systems over Internet is the main
+problem
+for
+Service
+Oriented
+Architecture. A suitable Interoperability
+framework
+would
+enable
+these
+requirements is required.
+In
+addition,
+Interoperability
+framework is an architecture where a
+composite of processes is implemented
+as an interconnected queue of smaller,
+less complicated tasks [2]. The concept
+of interoperability framework has been
+successfully implemented in many areas
+of research. Due to the great capabilities
+of interoperability framework to glue the
+system components, it has been emerged
+for the SOA systems along with the
+agent-based technology. Currently,
+interoperability frameworks across multi
+domain of systems are evoking a high
+degree of interest in research. In this
+paper we describe our approach that
+KEYWORDS
+Service Oriented Architecture (SOA),
+Message Oriented Middleware (MOM),
+Agent
+Technology,
+Web
+Services,
+Interoperability, Ontology mapping.
+412International Journal on New Computer Architectures and Their Applications (IJNCAA) 1(2): 412-427
+The Society of Digital Information and Wireless Communications, 2011 (ISSN: 2220-9085)
+utilize agent technology to build MOM
+based interoperability framework [3].
+Furthermore, the fast growing of
+SOA architecture with Web Services and
+other connectivity mechanisms such as
+SOAP and REST are clearly important
+for system developments. Moreover, the
+loosely coupled nature of the message
+queuing (MQ) model, a large number of
+existing MQ customers feel that they are
+already adopting SOA principles. MQ
+provide
+an
+asynchronous
+communications protocol, meaning that
+the sender and receiver of the message
+do not need to interact with the message
+queue at the same time. The MQ Service
+allows MQ applications to be catalogued
+as software assets which can then be
+reused and composed as Web Services.
+As a communication channel in the
+distributed computing environments like
+SOA, MOM normally provides a
+message queue between the service
+provider and the service consumer to
+transfer messages. MOM is typically
+asynchronous, but it also supports
+synchronous message passing as well
+[MOM]. MOM is the foundation of
+Enterprise Service Bus (ESB) [ESB],
+which is widely believed to be a
+cornerstone of many SOA environments.
+
+\hspace{0.5 in}There are four common challenges in
+adopting SOA systems which also
+motivate us to study the different style of
+SOA implementation. First challenge is
+managing services, lack of testing in
+SOA space, appropriate level of security
+and the last is interoperability.
+Interoperability became an important
+aspect of SOA implementations since
+413International Journal on New Computer Architectures and Their Applications (IJNCAA) 1(2): 412-427
+The Society of Digital Information and Wireless Communications, 2011 (ISSN: 2220-9085)
+different vendors have their own product
+and deployment style to implement SOA
+system. Therefore, integration and
+communication between those products
+will be interrupted. In addition,
+interoperability can be defined as
+Information Technology ability to work
+with each other. In the loosely coupled
+environment of SOA, separate resources
+don't need to know the details of each
+work, but they need to have enough
+common ground to exchange messages
+without error or misunderstanding [8]. In
+this paper, interoperability refers to the
+use of information system as tools to
+assure services or messages exchange
+between
+heterogeneous
+and
+geographically
+distributed
+within
+organizations in Service Oriented
+Architecture (SOA).
+
+\hspace{0.5 in}Recently, researchers have shown an
+increased interest in interoperability
+since there are a lot of products available
+to provide the same functionality which
+have raised some heterogeneous issues
+[9]. Various middleware technologies
+are often used as the communication
+infrastructure for distributed system to
+ensure the interoperability. However,
+different
+types
+of
+middleware,
+deployment style and even version of
+product have cause interoperability
+issues as well. We believe that more
+research needs to be explored and
+consolidate for interoperability issues.
+Development of generic, flexible and
+autonomous interoperability framework
+would be a good step towards achieving
+interoperability in the SOA systems.
+Traditionally, researchers within this
+area are focusing more on the
+interoperability
+specification,
+standardization and requirement [10].
+\hspace{0.5 in}The motivation for this research work is
+to investigate:
+\begin{enumerate}
+
+\item How to develop a generic, flexible and autonomous interoperability framework for cross-platform integration and communication in SOA system that can support multi-type of message in different SOA application.
+
+\item How to adopt Message Oriented Middleware architecture with agent- based technology for an intelligent,flexible and generic interoperability framework.
+
+\item How to develop an automated multi
+agent system for message translation and
+communication across multi domain of
+SOA applications.
+
+\item How to develop interoperability
+framework for SOA environment that
+support multi domain of applications.
+
+\end{enumerate}
+
+\chapter{Appendix B}
+
+List of functions used in the applications:
+\\
+
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Sr.no.}} & \multicolumn{1}{c|}{\textbf{Function Name}}      \\ \hline
+1                                     & ConnectionConfiguration(server,5222, "Resource") \\ \hline
+2                                     & XMPPConnection(config)                           \\ \hline
+3                                     & processMessage(Chat chat, Message message)       \\ \hline
+4                                     & Chatlist(XMPPConnection connection)              \\ \hline
+5                                     & processMessage(Chat chat, Message message)       \\ \hline
+6                                     & displayBuddyList()                               \\ \hline
+7                                     & getRoster()                                      \\ \hline
+8                                     & getEntries()                                     \\ \hline
+9                                     & connect()                                        \\ \hline
+10                                    & disconnect()                                     \\ \hline
+11                                    & login(username,password)                         \\ \hline
+12                                    & add(r.getName())                                 \\ \hline
+13                                    & getChatManager()                                 \\ \hline
+14                                    & createChat(user, this)                           \\ \hline
+15                                    & addChatListener(new ChatManagerListenerImpl())   \\ \hline
+16                                    & sendMessage(message)                             \\ \hline
+17                                    & ChatManagerListernerImpl()                       \\ \hline
+\end{tabular}
+\caption{Functions used in developement}
+
+\end{table}
+
+
+\chapter{Appendix C}
+
+\section{Introduction}
+
+Testing Strategies:
+Software Testing Strategies should follow generic characteristics:
+\begin{itemize}
+	\item Testing begins at module level and works ‘outward’ toward the integration of the entire computer base system.
+	\item Different testing techniques are applied at each point.
+	\item Testing is conducted by developer of software.
+\end{itemize}
+
+\hspace{0.5 in}Testing challenges the assumptions, risks and uncertainty inherent the work of the other disciplines, addressing those concerns by concrete demonstration and impartial evaluation. First testing software is enormously difficult. The different ways a given program can behave are unquantifiable. Second, testing is typically done without a clear methodology so results vary from project to project. A strategy for software testing begins with Unit Testing.\\
+
+Testing Objectives:\\
+
+\hspace{0.5 in}The purpose of testing is to uncover the errors in the software. The objective behind testing is to correct and rectify the errors that are present in the current work product. There are certain rules of testing that can serve as testing objectives:
+\begin{enumerate}
+	\item Testing is the process of executing the program with the intent of finding errors.
+	\item A good test is the one which has higher probability of finding an error.
+	\item A successful test is the one which uncovers a yet undetected error.
+\end{enumerate}
+
+\textbf{Unit Testing:}\\
+\hspace{0.5 in}It concentrates on each unit of software as implemented in source code. Unit testing focuses verification effort on the smallest unit of software design the software component or module. Using the component-level designed description as a guide, important control path are tested to uncover error is limited by constrained for unit testing. The unit testing is white-box oriented, and the step can be conducted in parallel for multiple components.\\
+\hspace{0.5 in}Unit testing is normally considered as an adjunct to the coding step. After source level code has been developed, reviewed, and verified for correspondence to component-level designed, unit rest design begins. Each test case should be coupled with a set to expected results.\\
+\hspace{0.5 in}The Testing process progresses by moving to Integration testing, where the focus is on the design and construction of software design. Next Validation Testing is encountered, where requirements established as part of project requirement analysis are validated against the project that has been constructed. Finally we arrived at System Testing, where project and other system elements are tested as a whole.  \\
+
+\textbf{System Testing:}\\
+\hspace{0.5 in}System testing is actually a series of different tests whose purpose is to fully exercise the computer based system.\\
+In system testing, the platform must be as close to production used in the customer’s environment, we can more accurately test ‘softer system features (performance, security and fault-tolerance).\\
+
+
+\textbf{White Box Testing:}\\
+\hspace{0.5 in}White box approach focuses on the inner structure of the software to be tested. Tester must have knowledge of the structure. Using White box testing methods, the software engineer can derive test cases that:
+\begin{enumerate}
+	\item Guarantee that all independent paths within a module have been exercised at least once.
+	\item Exercise all logical decisions.
+	\item Execute all loops at their boundaries and in their operational bounds
+	\item Exercise internal data structures to maintain their validity.
+\end{enumerate}
+
+\textbf{Black Box Testing:}\\
+\hspace{0.5 in}Black Box Testing focuses on the functional Requirements of the software. It enables the software engineer to derive sets of input conditions that will fully exercise all functional requirements for a program.\\
+Using Black box approach, a tester considers the software-under-test to be an opaque box. There is no knowledge of its inner structure. The tester only has knowledge of what it does. The size of the software-under-test using this approach can vary from a simple module, member function, or subsystem to a complete system. \\
+\hspace{0.5 in}After a system has been successfully built, it becomes necessary to test it prior to deployment. Informally, Software Testing can be defined as “the process of exercising a program with the specific intent of finding errors prior to delivery to the end user”.\\
+The main purpose of Testing is to:
+\begin{itemize}
+	\item Debug and rectify errors in the product.
+	\item See that the product built conforms to the requirements specified.
+	\item Ensure that the product meets certain performance requirements.
+	\item It is also an indication of quality of the product.
+	\item Basic validation techniques are checked.
+\end{itemize}
+
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./myimg/error.jpg}}%
+\caption{Example of validation and warnings}%
+\label{Error}%
+\end{figure}
+\\
+\section{Test Item (Function)}
+For the basic implementation of the system we will use the Incremental model and we will do the unit testing for testing each module. In our system the module are calculation of the ASP, calculation of the power saved by using proposed system, No Data Loss Check, Traffic Analysis, Implementation of wake up packet.
+
+\section{Features to be tested}
+\begin{table}[h]
+\centering{}
+\begin {tabular} {|p{0.7 in}|p{3 in}|p{1.2 in}|} \hline
+\textbf{Sr. No.}	& \hspace{0.3 in}\textbf{Feature to be tested(Use-Cases)}&\textbf{Level  of   testing required /priority} \\ \hline
+\hspace{0.3 in}1 &	\hspace{0.3 in}Account Login & \hspace{0.5 in}H\\ \hline
+\hspace{0.3 in}2 & \hspace{0.3 in}Addition of another account & \hspace{0.5 in}H \\ \hline
+\hspace{0.3 in}3 &	\hspace{0.3 in}Unified display of roster list & \hspace{0.5 in}H \\ \hline
+\hspace{0.3 in}4 & \hspace{0.3 in}Chat with any user displayed & \hspace{0.5 in}H \\ \hline
+\hspace{0.3 in}4 & \hspace{0.3 in}Input Validation & \hspace{0.5 in}H \\ \hline
+\hspace{0.3 in}4 & \hspace{0.3 in}Constraint satisfaction & \hspace{0.5 in}H \\ \hline
+\hspace{0.3 in}4 & \hspace{0.3 in}User interface simplification & \hspace{0.5 in}H \\ \hline
+\end{tabular} 
+\caption{Features to be tested}
+\end{table}
+
+\textbf{Reliability Testing:}\\
+\hspace{0.5 in}In this we list down those parts of the system whose testing gives us the reliability of the system and those are
+\begin{itemize}
+\item	Connection to server and session log in.
+\item	No sensitive data loss.
+\item Addition of multiple accounts without affecting the current session.
+\item	Proper thread handling and chat window handling.
+\end{itemize}
+
+\chapter{Appendix D}
+
+\subsection{Technical Research Paper}
+
+Our application oriented technical paper focused on the application of how the XMPP protocol core functions could be 
+applied to the middleware solution for multiple instant messaging service providers.
+
+With the introduction of multiple communication
+platforms available, the internet messaging user community is
+fragmented into users of different platforms and services. Each
+service provider has it's own protocol and client implementation.
+Thus a standard client for instant messaging is lacking. There is
+a need to standardize communication platforms so that the
+fragmentation can be reduced and ultimately reducing the data
+and storage redundancy. XMPP is an open technology for real-
+time communication[1]. At present the user has to rely on
+completely different clients, platforms and technologies. This
+leads to extra usage of computing resources like storage and
+processing. In short, heterogeneous systems for the same task are
+present. A common solution to this is a Message Oriented
+Middleware (MOM). This architectural framework for
+interoperability can be applied to ease the communication and
+bridge the gap between the users and service providers. The actual implementation details and solution methodology is given 
+in the following paper.
+
+\includepdf[pages=-,scale=.8,pagecommand={}]{./mypdf/paper.pdf}
+
+\subsection{Certificates and Reviews}
+
+\begin{itemize}
+
+\item We presented our paper - \textbf{"MULTI PROTOCOL CROSS PLATFORM COMMUNICATION MIDDLEWARE"} at the following places:
+\begin{itemize}
+\item Internal concept presentation and kick off meeting, Persistent Systems, Ltd.
+ \item VIT College of Engineering, Pune
+\end{itemize}
+\\
+
+\item Our paper was also accepted by the following journal and published in their May 2014 issue: 
+\begin{itemize}
+ \item Journal of Engineering Research and Technology (IJERT)
+\end{itemize}
+\\
+
+\item On account of the project work, including the development, coding and designing of the software, one of the group members, Vikas Tekale, was given a call for job placement from Persistent Systems, Ltd based 
+on the positive feedback and recommendation by the Persistent Systems Ltd. mentors. 
+
+\\
+
+\item We also were awarded the Persistent Systems authorized project completion remarks and certificates from our mentors and sponsors respectively.
+
+\\
+\end{itemize}
+
+\\
+The following pages contain the certificates and reviews of the same.
+
+%\subsubsection{Journal acceptance and publication:}
+\newpage
+
+% \begin{figure}%
+\includepdf[pages=1,scale=.8,pagecommand={}]{./mypdf/accept.pdf}
+%\caption{Acceptance of technical paper}
+%\end{figure}
+
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.6]{./myimg/dhruv.jpg}}%
+\caption{Certificate of publication from IJERT}%
+\label{certificates}%
+\end{figure}
+\\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.6]{./myimg/vikas.jpg}}%
+\caption{Certificate of publication from IJERT}%
+\label{certificates}%
+\end{figure}
+\\
+\newpage
+%\includepdf[pages=1,scale=.8,pagecommand={}]{./mypdf/dhruv.pdf}
+
+%\includepdf[pages=1,scale=.8,pagecommand={}]{./mypdf/vikas.pdf}
+%\caption{Certificate of publication from IJERT}
+%\end{figure}%
+
+%\begin{figure}%
+%\includegraphics[width=\columnwidth]{./myimg/feedback.jpg}%
+%\caption{Feedback from the Persistent Systems Ltd. mentors}%
+%\label{}%
+%\end{figure}
+%\newpage
+
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.2]{./myimg/feedback.jpg}}%
+\caption{Feedback from the Persistent Systems Ltd. mentors}%
+\label{feedback}%
+\end{figure}
+\newpage
+
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.7]{./myimg/offer.jpg}}%
+\caption{Offer letter from Persistent Systems Ltd.}%
+\label{offer}%
+\end{figure}
+\newpage
+
+\\
+%\subsubsection{Presentations and Participation in inter college events}
+
+\begin{figure}%
+\includegraphics[width=\columnwidth]{./myimg/certi1.jpg}%
+\caption{Certificate of Paper Presentation for the first author}%
+\label{}%
+\end{figure}
+\newpage
+\begin{figure}%
+\includegraphics[width=\columnwidth]{./myimg/certi2.jpg}%
+\caption{Certficate of Paper Presentation for the second author}%
+\label{}%
+\end{figure}
+\newpage
+
+
+\chapter{Self Evaluation Sheet}
+
+\textbf{"Multi Protocol Cross Platform Communication Middleware"}
+\newline
+Submitted by :-
+\newline Mr. Dhruv Sangvikar(B80254267)
+\newline Mr. Vikas Tekale (B80254223)
+
+\begin{figure}[h]%
+\centering
+\includegraphics[width=\columnwidth]{./myimg/self.jpg}%
+\caption{Self Evaluation Sheet}%
+\label{offer}%
+\end{figure}
+\newpage
+
+\newline
+
+\begin{thebibliography}{9}
+
+\bibitem{label1}http://xmpp.org/about-xmpp/
+
+\bibitem{label2}Agent-based MOM Interoperability framework for integration and
+communication of different SOA applications Najhan M.Ibrahim, Mohd
+Fadzil Hassan, Zain Balfagih Department of Computer and Information
+Sciences
+
+\bibitem{label3}https://developer.pidgin.im/wiki/WikiStart
+
+\bibitem{label4}https://code.google.com/p/miranda/
+
+\bibitem{label5}https://wiki.gnome.org/action/show/Apps/Empathy
+
+\bibitem{label6}https://wiki.gnome.org/action/show/Apps/Empathy#Project_Resources
+
+\bibitem{label7}http://www-03.ibm.com/software/products/en/ibmsame
+
+\bibitem{label8}http://naim.n.ml.org/, https://code.google.com/p/naim/
+
+\bibitem{label9}http://kde.org/applications/internet/kopete/
+
+\bibitem{label10}https://gitorious.org/kadu, http://www.kadu.im/w/English:GetInvolved
+
+\bibitem{label11}https://jitsi.org/Main/About
+
+\bibitem{label12}http://en.wikipedia.org/wiki/Instantbird
+
+\bibitem{label13}https://imo.im/about
+
+\bibitem{label14}https://jitsi.org/Documentation/UserDocumentation
+
+\bibitem{label15}Research on web instant messaging using REST web services, Yishan
+Song; Beijing Univ. of Posts and Telecommunication, Beijing, China,
+Ke Xu, Ke Liu, Published in Web Society (SWS), 2010 IEEE 2 nd
+Synopsium
+
+\bibitem{label16}A Cross Platform Web Service Implementation Using SOAP By Nan-
+Chao Huang Submitted in partial fulfillment of the requirements For The
+Degree of Master of Science in Computer and Information Science
+
+\bibitem{label17}RFC 6120, By P. Saint-Andre, IETF,, Category: Standards Track, ISSN:
+2070-1721, March 2011
+
+\bibitem{label18}Agent-based MOM Interoperability framework for integration and
+communication of different SOA applications Najhan M.Ibrahim, Mohd
+Fadzil Hassan, Zain Balfagih Department of Computer and Information
+Sciences
+
+\bibitem{label19}A Study of Internet Instant Messaging and Chat Protocols Raymond B.
+Jennings III, Erich M. Nahum, David P. Olshefski, Debanjan S
+
+\bibitem{label20}Research Article : Research on Effectiveness Modeling of the Online
+Chat Group Hua-Fei Zhang, 1 Li-Gang Dong, 1 Jia-wei Sun, 2 and
+Ying Li 1 1 2 School of Information & Electronic Engineering, Zhejiang
+Gongshang University, Hangzhou, 310018, China Information
+Management Center,Training Department, Information Engineering
+University, Zhengzhou, 450002, China
+
+\bibitem{label21}www.stackoverflow.com
+\end{thebibliography}
+
+\newpage
+\end{document}
+

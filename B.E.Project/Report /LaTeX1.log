@@ -1,0 +1,2433 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.8)  30 MAY 2014 00:21
+entering extended mode
+**LaTeX1.tex
+("C:\Users\Hemangi\Dropbox\Report (1)\LaTeX1.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
+, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
+ian, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
+ kannada, kurmanji, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman
+-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
+ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, w
+elsh, loaded.
+("C:\Users\Hemangi\Dropbox\Report (1)\SureshLimkar.cls"
+
+LaTeX Warning: You have requested document class `SureshLimkar',
+               but the document class provides `SVNITStyle'.
+
+Document Class: SVNITStyle 2010/04/10
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancybox\fancybox.sty"
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box26
+\shadowsize=\dimen105
+\@Sbox=\box27
+\do@VerbBox=\toks15
+\the@fancyput=\toks16
+\this@fancyput=\toks17
+\EndVerbatimTokens=\toks18
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\changepage\changepage.sty"
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count89
+\cp@tempcnt=\count90
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen106
+\extrarowheight=\dimen107
+\NC@list=\toks19
+\extratabsurround=\skip52
+\backup@length=\skip53
+)
+\TX@col@width=\dimen108
+\TX@old@table=\dimen109
+\TX@old@col=\dimen110
+\TX@target=\dimen111
+\TX@delta=\dimen112
+\TX@cols=\count91
+\TX@ftn=\toks20
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count92
+\lst@gtempboxa=\box28
+\lst@token=\toks21
+\lst@length=\count93
+\lst@currlwidth=\dimen113
+\lst@column=\count94
+\lst@pos=\count95
+\lst@lostspace=\dimen114
+\lst@width=\dimen115
+\lst@newlines=\count96
+\lst@lineno=\count97
+\lst@maxwidth=\dimen116
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count98
+\lst@skipnumbers=\count99
+\lst@framebox=\box29
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count100
+\calc@Bcount=\count101
+\calc@Adimen=\dimen117
+\calc@Bdimen=\dimen118
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count102
+\calc@Cskip=\skip56
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box30
+\AM@toc@title=\toks22
+\c@AM@survey=\count103
+\AM@templatesizebox=\box31
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+) ("C:\Users\Hemangi\Dropbox\Report (1)\LaTeX1.aux"
+
+LaTeX Warning: Label `Component Diagram' multiply defined.
+
+
+LaTeX Warning: Label `User login screen' multiply defined.
+
+
+LaTeX Warning: Label `Composite Structure Diagram' multiply defined.
+
+
+LaTeX Warning: Label `Composite Structure Diagram' multiply defined.
+
+
+LaTeX Warning: Label `certificates' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `offer' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count104
+\scratchdimen=\dimen119
+\scratchbox=\box32
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen120
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks24
+)
+\c@lstlisting=\count110
+\AtBeginShipoutBox=\box33
+ ("C:\Users\Hemangi\Dropbox\Report (1)\titlepage.tex"
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ...tbf{Bachelor of Computer Engineering}\\ \\
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<GHRCEMlogo.jpg, id=1, 1856.3754pt x 2408.7591pt>
+File: GHRCEMlogo.jpg Graphic file (type jpg)
+ <use GHRCEMlogo.jpg>
+Package pdftex.def Info: GHRCEMlogo.jpg used on input line 35.
+(pdftex.def)             Requested size: 71.13188pt x 92.29094pt.
+ <Pune_univ_logo.jpg, id=2, 192.72pt x 144.54pt>
+File: Pune_univ_logo.jpg Graphic file (type jpg)
+
+<use Pune_univ_logo.jpg>
+Package pdftex.def Info: Pune_univ_logo.jpg used on input line 44.
+(pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.47 \end{center}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Hemangi/Dropbox/Report (1)/GHRCEMlogo.jpg> <C:/Users/Hema
+ngi/Dropbox/Report (1)/Pune_univ_logo.jpg>]) ("C:\Users\Hemangi\Dropbox\Report (1)\certificate.tex"
+File: GHRCEMlogo.jpg Graphic file (type jpg)
+
+<use GHRCEMlogo.jpg>
+Package pdftex.def Info: GHRCEMlogo.jpg used on input line 39.
+(pdftex.def)             Requested size: 84.55244pt x 109.67589pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 40.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.57 ...ity of Pune in the academic year 2013-14.}
+                                                  }\\ \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.57 ...ity of Pune in the academic year 2013-14.}
+                                                  }\\ \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...ity of Pune in the academic year 2013-14.}
+                                                  }\\ \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra }, or forgotten \endgroup.
+<recently read> \egroup 
+                        
+l.57 ...ity of Pune in the academic year 2013-14.}
+                                                  }\\ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+l.57 ...ty of Pune in the academic year 2013-14.}}
+                                                  \\ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+[1]) <./mypdf/sponsor.pdf, id=18, 614.295pt x 794.97pt>
+File: ./mypdf/sponsor.pdf Graphic file (type pdf)
+ <use ./mypdf/sponsor.pdf>
+Package pdftex.def Info: ./mypdf/sponsor.pdf used on input line 82.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ./mypdf/sponsor.pdf Graphic file (type pdf)
+ <use ./mypdf/sponsor.pdf>
+Package pdftex.def Info: ./mypdf/sponsor.pdf used on input line 82.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+<./mypdf/sponsor.pdf, id=21, page=1, 614.295pt x 794.97pt>
+File: ./mypdf/sponsor.pdf Graphic file (type pdf)
+ <use ./mypdf/sponsor.pdf, page 1>
+Package pdftex.def Info: ./mypdf/sponsor.pdf, page1 used on input line 82.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ./mypdf/sponsor.pdf Graphic file (type pdf)
+
+<use ./mypdf/sponsor.pdf, page 1>
+Package pdftex.def Info: ./mypdf/sponsor.pdf, page1 used on input line 82.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ./mypdf/sponsor.pdf Graphic file (type pdf)
+ <use ./mypdf/sponsor.pdf, page 1>
+Package pdftex.def Info: ./mypdf/sponsor.pdf, page1 used on input line 82.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ./mypdf/sponsor.pdf Graphic file (type pdf)
+ <use ./mypdf/sponsor.pdf, page 1>
+Package pdftex.def Info: ./mypdf/sponsor.pdf, page1 used on input line 82.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ./mypdf/sponsor.pdf Graphic file (type pdf)
+
+<use ./mypdf/sponsor.pdf, page 1>
+Package pdftex.def Info: ./mypdf/sponsor.pdf, page1 used on input line 82.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [1 <C:/Users/Hemangi/Dropbox/Report (1)/mypdf/sponsor.pdf>]
+<./mypdf/project-complete.pdf, id=53, 614.295pt x 794.97pt>
+File: ./mypdf/project-complete.pdf Graphic file (type pdf)
+ <use ./mypdf/project-complete.pdf>
+Package pdftex.def Info: ./mypdf/project-complete.pdf used on input line 86.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ./mypdf/project-complete.pdf Graphic file (type pdf)
+
+<use ./mypdf/project-complete.pdf>
+Package pdftex.def Info: ./mypdf/project-complete.pdf used on input line 86.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ <./mypdf/project-complete.pdf, id=56, page=1, 614.295pt x 794.97pt>
+File: ./mypdf/project-complete.pdf Graphic file (type pdf)
+
+<use ./mypdf/project-complete.pdf, page 1>
+Package pdftex.def Info: ./mypdf/project-complete.pdf, page1 used on input line 86.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ./mypdf/project-complete.pdf Graphic file (type pdf)
+ <use ./mypdf/project-complete.pdf, page 1>
+Package pdftex.def Info: ./mypdf/project-complete.pdf, page1 used on input line 86.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ./mypdf/project-complete.pdf Graphic file (type pdf)
+
+<use ./mypdf/project-complete.pdf, page 1>
+Package pdftex.def Info: ./mypdf/project-complete.pdf, page1 used on input line 86.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ./mypdf/project-complete.pdf Graphic file (type pdf)
+ <use ./mypdf/project-complete.pdf, page 1>
+Package pdftex.def Info: ./mypdf/project-complete.pdf, page1 used on input line 86.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ./mypdf/project-complete.pdf Graphic file (type pdf)
+
+<use ./mypdf/project-complete.pdf, page 1>
+Package pdftex.def Info: ./mypdf/project-complete.pdf, page1 used on input line 86.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [2 <C:/Users/Hemangi/Dropbox/Report (1)/mypdf/project-complete.pdf>]
+("C:\Users\Hemangi\Dropbox\Report (1)\acknopage.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+
+ []
+
+[1]) ("C:\Users\Hemangi\Dropbox\Report (1)\abstractpage.tex"
+Missing character: There is no ¬ in font cmr12!
+Missing character: There is no ≠ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+[1]) ("C:\Users\Hemangi\Dropbox\Report (1)\LaTeX1.toc"
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][]  
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][]  
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][]  
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][]  
+ []
+
+[2] [3])
+\tf@toc=\write4
+ [4] ("C:\Users\Hemangi\Dropbox\Report (1)\LaTeX1.lof"
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][]  
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][]  
+ []
+
+[5
+
+])
+\tf@lof=\write5
+ [6] ("C:\Users\Hemangi\Dropbox\Report (1)\LaTeX1.lot")
+\tf@lot=\write6
+ [7
+
+]
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
+
+ []
+
+[8
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
+ [9]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \hspace
+             {0.5 in}Now, with most of the service providers having used the...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
+
+ []
+
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+[10]
+Chapter 2.
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+! Too many }'s.
+l.157 }
+       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--176
+
+ []
+
+[11
+
+] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \hspace
+             {0.5 in}\textbf{Drawbacks:}\\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
+
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+[13]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 \\T
+         hus it was easy to narrow down the list to Facebook and Google.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 228--243
+
+ []
+
+[15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+! Undefined control sequence.
+l.260 \subfloat
+               {\includegraphics[scale=0.675]{java.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<java.jpg, id=156, 529.98pt x 290.08376pt>
+File: java.jpg Graphic file (type jpg)
+ <use java.jpg>
+Package pdftex.def Info: java.jpg used on input line 260.
+(pdftex.def)             Requested size: 357.73723pt x 195.80693pt.
+ [17 <C:/Users/Hemangi/Dropbox/Report (1)/java.jpg (PNG copy)>] [18]
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--301
+
+ []
+
+[19
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+
+ []
+
+[20]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [21]
+! Undefined control sequence.
+l.369 \subsubsubsection
+                       {Desktop}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.371 \subsubsubsection
+                       {Android}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.374 \subsubsubsection
+                       {Desktop}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.376 \subsubsubsection
+                       {Android}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.379 \subsubsubsection
+                       {Desktop}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.381 \subsubsubsection
+                       {Android}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[22]
+! Undefined control sequence.
+l.385 \subsubsubsection
+                       {Android}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[23]
+! Misplaced alignment tab character &.
+l.397 ...em User interface must be very friendly &
+                                                   self descriptive.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+! Undefined control sequence.
+l.437 \subfloat
+               {\includegraphics[scale=0.5]{./myimg/usecase1.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/usecase1.jpg, id=186, 835.12pt x 256.96pt>
+File: ./myimg/usecase1.jpg Graphic file (type jpg)
+ <use ./myimg/usecase1.jpg>
+Package pdftex.def Info: ./myimg/usecase1.jpg used on input line 437.
+(pdftex.def)             Requested size: 417.55898pt x 128.47968pt.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.442 \\
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.443 \begin
+            {figure}[h]%
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.445 \subfloat
+               {\includegraphics[scale=0.5]{./myimg/usecase1.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ./myimg/usecase1.jpg Graphic file (type jpg)
+<use ./myimg/usecase1.jpg>
+Package pdftex.def Info: ./myimg/usecase1.jpg used on input line 445.
+(pdftex.def)             Requested size: 417.55898pt x 128.47968pt.
+ [26 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/usecase1.jpg>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+! Undefined control sequence.
+l.456 \subfloat
+               {\includegraphics[scale=0.5]{./myimg/class.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/class.jpg, id=190, 708.6475pt x 871.255pt>
+File: ./myimg/class.jpg Graphic file (type jpg)
+ <use ./myimg/class.jpg>
+Package pdftex.def Info: ./myimg/class.jpg used on input line 456.
+(pdftex.def)             Requested size: 354.32289pt x 435.62643pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--460
+
+ []
+
+[27 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/class.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+
+ []
+
+! Undefined control sequence.
+l.468 \subfloat
+               {\includegraphics[scale=0.5]{./myimg/activity.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/activity.jpg, id=194, 287.0725pt x 849.1725pt>
+File: ./myimg/activity.jpg Graphic file (type jpg)
+ <use ./myimg/activity.jpg>
+Package pdftex.def Info: ./myimg/activity.jpg used on input line 468.
+(pdftex.def)             Requested size: 143.53589pt x 424.5852pt.
+ [28 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/activity.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+! Undefined control sequence.
+l.480 \subfloat
+               {\includegraphics[scale=0.45]{./myimg/sequence.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/sequence.jpg, id=198, 497.86pt x 973.6375pt>
+File: ./myimg/sequence.jpg Graphic file (type jpg)
+ <use ./myimg/sequence.jpg>
+Package pdftex.def Info: ./myimg/sequence.jpg used on input line 480.
+(pdftex.def)             Requested size: 224.03493pt x 438.13283pt.
+ [29 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/sequence.jpg>]
+! Undefined control sequence.
+l.490 \subfloat
+               {\includegraphics[scale=0.5]{./myimg/component.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/component.jpg, id=202, 558.085pt x 327.2225pt>
+File: ./myimg/component.jpg Graphic file (type jpg)
+ <use ./myimg/component.jpg>
+Package pdftex.def Info: ./myimg/component.jpg used on input line 490.
+(pdftex.def)             Requested size: 279.04182pt x 163.61084pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--494
+
+ []
+
+[30 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/component.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
+
+ []
+
+! Undefined control sequence.
+l.500 \subfloat
+               {\includegraphics[scale=0.5]{./myimg/composite.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/composite.jpg, id=206, 809.0225pt x 236.885pt>
+File: ./myimg/composite.jpg Graphic file (type jpg)
+ <use ./myimg/composite.jpg>
+Package pdftex.def Info: ./myimg/composite.jpg used on input line 500.
+(pdftex.def)             Requested size: 404.51027pt x 118.4422pt.
+ [31 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/composite.jpg>]
+! Undefined control sequence.
+l.510 \subfloat
+               {\includegraphics[scale=0.5]{./myimg/component.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ./myimg/component.jpg Graphic file (type jpg)
+<use ./myimg/component.jpg>
+Package pdftex.def Info: ./myimg/component.jpg used on input line 510.
+(pdftex.def)             Requested size: 279.04182pt x 163.61084pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--514
+
+ []
+
+[32]
+! Undefined control sequence.
+l.520 \subfloat
+               {\includegraphics[scale=0.5]{./myimg/deployment.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/deployment.jpg, id=214, 538.01pt x 467.7475pt>
+File: ./myimg/deployment.jpg Graphic file (type jpg)
+ <use ./myimg/deployment.jpg>
+Package pdftex.def Info: ./myimg/deployment.jpg used on input line 520.
+(pdftex.def)             Requested size: 269.00433pt x 233.87317pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--524
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--524
+
+ []
+
+[33 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/deployment.jpg>]
+Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
+
+ []
+
+[34
+
+]
+! Undefined control sequence.
+l.541  \subfloat
+                {\includegraphics[scale=0.5]{./myimg/architecture.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/architecture.jpg, id=221, 402.4125pt x 225.84375pt>
+File: ./myimg/architecture.jpg Graphic file (type jpg)
+ <use ./myimg/architecture.jpg>
+Package pdftex.def Info: ./myimg/architecture.jpg used on input line 541.
+(pdftex.def)             Requested size: 201.20575pt x 112.92159pt.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.556 \hspace
+             {0.5 in} This is the overall system architecture.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
+
+ []
+
+[35 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/architecture.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 562--564
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--578
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+
+ []
+
+[37]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 592--600
+
+ []
+
+[38]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.614 \hspace
+             {0.5 in}Here the basic implementation of the specification as g...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
+
+ []
+
+! Undefined control sequence.
+<recently read> \textb 
+                       
+l.621  \textb
+             {Client:} Clients send an open stream packet to server to reque...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \textb 
+                       
+l.622  \textb
+             {<stream:stream to='example.com' xmlns='jabber:client' xmlns:st...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Overfull \hbox (14.7461pt too wide) in paragraph at lines 620--627
+\OT1/cmr/m/n/10 <stream:stream to='example.com' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams'
+ []
+
+
+Overfull \hbox (65.89487pt too wide) in paragraph at lines 620--627
+\OT1/cmr/bx/n/10 tls> <mech-a-nisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>DIGEST-MD5</mechanism>
+ []
+
+
+Overfull \hbox (0.19528pt too wide) in paragraph at lines 620--627
+\OT1/cmr/bx/n/10 <mech-a-nism>PLAIN</mechanism><mechanism>EXTERNAL</mechanism></mechanisms>
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+! Undefined control sequence.
+l.633 ...password are allocated in format of ‚Äú\0
+                                                  UserName\0Password‚Äù. The...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.633 ...re allocated in format of ‚Äú\0UserName\0
+                                                  Password‚Äù. Then, the cli...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Overfull \hbox (64.84769pt too wide) in paragraph at lines 628--646
+\OT1/cmr/bx/n/10 <auth xmlns='urn:ietf:params:xml:ns:xmpp-sasl' mech-a-nism='PLAIN'>AG1iZWQAbWlycm9y</auth> 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 628--646
+
+ []
+
+[39]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.651 ...urn:ietf:params:xml:ns:xmpp-bind'/></iq>}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.651 ...urn:ietf:params:xml:ns:xmpp-bind'/></iq>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.657 ...urce>someresource</resource></bind></iq>}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\mbox #1->\leavevmode \hbox {#1}
+                                
+l.657 ...urce>someresource</resource></bind></iq>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\nfss@text #1->{\mbox {#1}}
+                           
+l.657 ...urce>someresource</resource></bind></iq>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.661 ...ample.com/someresource</jid></bind></iq>}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\mbox #1->\leavevmode \hbox {#1}
+                                
+l.661 ...ample.com/someresource</jid></bind></iq>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\nfss@text #1->{\mbox {#1}}
+                           
+l.661 ...ample.com/someresource</jid></bind></iq>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.663 \item
+            \textbf{Request a new session}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.663 \item \textbf
+                   {Request a new session}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.663 \item \textbf
+                   {Request a new session}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.668 ...:ietf:params:xml:ns:xmpp-session'/></iq>}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\mbox #1->\leavevmode \hbox {#1}
+                                
+l.668 ...:ietf:params:xml:ns:xmpp-session'/></iq>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\nfss@text #1->{\mbox {#1}}
+                           
+l.668 ...:ietf:params:xml:ns:xmpp-session'/></iq>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.673 ...'example.com' type='result'id='sess_1'/>}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\mbox #1->\leavevmode \hbox {#1}
+                                
+l.673 ...'example.com' type='result'id='sess_1'/>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\nfss@text #1->{\mbox {#1}}
+                           
+l.673 ...'example.com' type='result'id='sess_1'/>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.677 ...rams:xml:ns:xmpp-stanzas'/></error></iq>}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\mbox #1->\leavevmode \hbox {#1}
+                                
+l.677 ...rams:xml:ns:xmpp-stanzas'/></error></iq>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\nfss@text #1->{\mbox {#1}}
+                           
+l.677 ...rams:xml:ns:xmpp-stanzas'/></error></iq>}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.679 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.679 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.680 \item
+            \textbf{Client and server exchange XMPP stanzas}\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.680 \item \textbf
+                   {Client and server exchange XMPP stanzas}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.680 \item \textbf
+                   {Client and server exchange XMPP stanzas}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.680 \item \textbf
+                   {Client and server exchange XMPP stanzas}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.680 \item \textbf
+                   {Client and server exchange XMPP stanzas}\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.680 \item \textbf
+                   {Client and server exchange XMPP stanzas}\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.682 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.682 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.682 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.683 \item
+            \textbf{Close stream}\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.683 \item \textbf
+                   {Close stream}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.683 \item \textbf
+                   {Close stream}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.683 \item \textbf
+                   {Close stream}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.683 \item \textbf
+                   {Close stream}\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.683 \item \textbf
+                   {Close stream}\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.689 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.689 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.689 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+! LaTeX Error: Command \end{enumerate} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.690 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.690 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.690 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.690 \end{enumerate}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.690 \end{enumerate}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.690 \end{enumerate}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (7993.29001pt too wide) in paragraph at lines 647--691
+[]$ 
+ []
+
+! Undefined control sequence.
+<recently read> \subsubsubsection 
+                                  
+l.697 \subsubsubsection
+                       {Basic functionality provided}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--699
+
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.699  \item T
+              he application will be able to provide the following basic fun...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 699
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 709--711
+
+ []
+
+[40] [41] [42]
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 743--745
+
+ []
+
+[43
+
+]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.754 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 761--763
+
+ []
+
+[44] [45]
+Chapter 6.
+[46
+
+] [47] [48] [49] [50] [51] [52] [53] [54]
+Chapter 7.
+<./myimg/d0.jpg, id=288, 531.48563pt x 327.47343pt>
+File: ./myimg/d0.jpg Graphic file (type jpg)
+ <use ./myimg/d0.jpg>
+Package pdftex.def Info: ./myimg/d0.jpg used on input line 1045.
+(pdftex.def)             Requested size: 265.74216pt x 163.73631pt.
+
+<./myimg/d1.jpg, id=289, 529.22719pt x 320.69812pt>
+File: ./myimg/d1.jpg Graphic file (type jpg)
+ <use ./myimg/d1.jpg>
+Package pdftex.def Info: ./myimg/d1.jpg used on input line 1052.
+(pdftex.def)             Requested size: 264.61295pt x 160.34866pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./myimg/d1.jpg Graphic file (type jpg)
+<use ./myimg/d1.jpg>
+Package pdftex.def Info: ./myimg/d1.jpg used on input line 1059.
+(pdftex.def)             Requested size: 264.61295pt x 160.34866pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./myimg/d2.jpg, id=290, 180.675pt x 322.20375pt>
+File: ./myimg/d2.jpg Graphic file (type jpg)
+ <use ./myimg/d2.jpg>
+Package pdftex.def Info: ./myimg/d2.jpg used on input line 1066.
+(pdftex.def)             Requested size: 90.33727pt x 161.10147pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./myimg/d3.jpg, id=291, 534.49687pt x 325.215pt>
+File: ./myimg/d3.jpg Graphic file (type jpg)
+ <use ./myimg/d3.jpg>
+Package pdftex.def Info: ./myimg/d3.jpg used on input line 1073.
+(pdftex.def)             Requested size: 267.24777pt x 162.6071pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./myimg/d4.jpg, id=292, 313.9228pt x 246.9225pt>
+File: ./myimg/d4.jpg Graphic file (type jpg)
+ <use ./myimg/d4.jpg>
+Package pdftex.def Info: ./myimg/d4.jpg used on input line 1081.
+(pdftex.def)             Requested size: 156.96101pt x 123.46094pt.
+ <./myimg/a0.jpg, id=293, 321.2pt x 481.8pt>
+File: ./myimg/a0.jpg Graphic file (type jpg)
+
+<use ./myimg/a0.jpg>
+Package pdftex.def Info: ./myimg/a0.jpg used on input line 1089.
+(pdftex.def)             Requested size: 160.59961pt x 240.8994pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./myimg/a1.jpg, id=294, 321.2pt x 481.8pt>
+File: ./myimg/a1.jpg Graphic file (type jpg)
+ <use ./myimg/a1.jpg>
+Package pdftex.def Info: ./myimg/a1.jpg used on input line 1096.
+(pdftex.def)             Requested size: 160.59961pt x 240.8994pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[55
+
+ <C:/Users/Hemangi/Dropbox/Report (1)/myimg/d0.jpg>] [56 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/d1.jpg> <C:/Users/He
+mangi/Dropbox/Report (1)/myimg/d2.jpg>] [57 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/d3.jpg> <C:/Users/Hemangi/Dropbox
+/Report (1)/myimg/d4.jpg>] [58 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/a0.jpg> <C:/Users/Hemangi/Dropbox/Report (1)/m
+yimg/a1.jpg>]
+Chapter 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1118--1119
+
+ []
+
+[59
+
+] [60]
+Chapter 9.
+[61
+
+]
+! Undefined control sequence.
+l.1160 \subfloat
+                {\includegraphics[scale=0.35]{./myimg/adt.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/adt.jpg, id=318, 1364.09625pt x 738.76pt>
+File: ./myimg/adt.jpg Graphic file (type jpg)
+ <use ./myimg/adt.jpg>
+Package pdftex.def Info: ./myimg/adt.jpg used on input line 1160.
+(pdftex.def)             Requested size: 477.44084pt x 258.56987pt.
+
+Overfull \hbox (7.68585pt too wide) in paragraph at lines 1160--1161
+ [][] 
+ []
+
+[62 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/adt.jpg>]
+! Undefined control sequence.
+l.1186 \subfloat
+                {\includegraphics[scale=0.35]{./myimg/eclipse.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/eclipse.jpg, id=322, 1364.09625pt x 740.7675pt>
+File: ./myimg/eclipse.jpg Graphic file (type jpg)
+ <use ./myimg/eclipse.jpg>
+Package pdftex.def Info: ./myimg/eclipse.jpg used on input line 1186.
+(pdftex.def)             Requested size: 477.44084pt x 259.2725pt.
+
+Overfull \hbox (7.68585pt too wide) in paragraph at lines 1186--1187
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1190
+
+ []
+
+[63] [64 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/eclipse.jpg>] [65] [66]
+Chapter 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1368
+
+ []
+
+[67
+
+]
+Chapter 11.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1409
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1411
+
+ []
+
+[68
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1419--1423
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1424--1427
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+[69]
+! Undefined control sequence.
+l.1453 \subfloat
+                {\includegraphics[scale=0.5]{./myimg/error.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/error.jpg, id=345, 538.26094pt x 328.97906pt>
+File: ./myimg/error.jpg Graphic file (type jpg)
+ <use ./myimg/error.jpg>
+Package pdftex.def Info: ./myimg/error.jpg used on input line 1453.
+(pdftex.def)             Requested size: 269.1298pt x 164.48912pt.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1458 \section
+               {Test Item (Function)}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 1465--1465
+[]|\OT1/cmr/bx/n/10 Level of test-ing
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 1465--1465
+\OT1/cmr/bx/n/10 re-quired /pri-or-
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[70 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/error.jpg>] [71]
+Chapter 12.
+<./mypdf/paper.pdf, id=352, 614.295pt x 794.97pt>
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf>
+Package pdftex.def Info: ./mypdf/paper.pdf used on input line 1511.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf>
+Package pdftex.def Info: ./mypdf/paper.pdf used on input line 1511.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [72
+
+]
+<./mypdf/paper.pdf, id=358, page=1, 614.295pt x 794.97pt>
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 1>
+Package pdftex.def Info: ./mypdf/paper.pdf, page1 used on input line 1511.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+
+<use ./mypdf/paper.pdf, page 1>
+Package pdftex.def Info: ./mypdf/paper.pdf, page1 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 1>
+Package pdftex.def Info: ./mypdf/paper.pdf, page1 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 1>
+Package pdftex.def Info: ./mypdf/paper.pdf, page1 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+
+<use ./mypdf/paper.pdf, page 1>
+Package pdftex.def Info: ./mypdf/paper.pdf, page1 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+ [73 <C:/Users/Hemangi/Dropbox/Report (1)/mypdf/paper.pdf>]
+<./mypdf/paper.pdf, id=424, page=2, 614.295pt x 794.97pt>
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 2>
+Package pdftex.def Info: ./mypdf/paper.pdf, page2 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+
+<use ./mypdf/paper.pdf, page 2>
+Package pdftex.def Info: ./mypdf/paper.pdf, page2 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 2>
+Package pdftex.def Info: ./mypdf/paper.pdf, page2 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+ [74 <C:/Users/Hemangi/Dropbox/Report (1)/mypdf/paper.pdf>] <./mypdf/paper.pdf, id=442, page=3, 614.295pt x 794.97pt>
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 3>
+Package pdftex.def Info: ./mypdf/paper.pdf, page3 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+
+<use ./mypdf/paper.pdf, page 3>
+Package pdftex.def Info: ./mypdf/paper.pdf, page3 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 3>
+Package pdftex.def Info: ./mypdf/paper.pdf, page3 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+ [75 <C:/Users/Hemangi/Dropbox/Report (1)/mypdf/paper.pdf>] <./mypdf/paper.pdf, id=469, page=4, 614.295pt x 794.97pt>
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 4>
+Package pdftex.def Info: ./mypdf/paper.pdf, page4 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+
+<use ./mypdf/paper.pdf, page 4>
+Package pdftex.def Info: ./mypdf/paper.pdf, page4 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 4>
+Package pdftex.def Info: ./mypdf/paper.pdf, page4 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+ [76 <C:/Users/Hemangi/Dropbox/Report (1)/mypdf/paper.pdf>] <./mypdf/paper.pdf, id=520, page=5, 614.295pt x 794.97pt>
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 5>
+Package pdftex.def Info: ./mypdf/paper.pdf, page5 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+
+<use ./mypdf/paper.pdf, page 5>
+Package pdftex.def Info: ./mypdf/paper.pdf, page5 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+File: ./mypdf/paper.pdf Graphic file (type pdf)
+ <use ./mypdf/paper.pdf, page 5>
+Package pdftex.def Info: ./mypdf/paper.pdf, page5 used on input line 1511.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+ [77 <C:/Users/Hemangi/Dropbox/Report (1)/mypdf/paper.pdf>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1523 
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1529 
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1534 
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1538 \end
+           {itemize}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1541 T
+        he following pages contain the certificates and reviews of the same.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[78] <./mypdf/accept.pdf, id=535, 597.51233pt x 845.0471pt>
+File: ./mypdf/accept.pdf Graphic file (type pdf)
+ <use ./mypdf/accept.pdf>
+Package pdftex.def Info: ./mypdf/accept.pdf used on input line 1547.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: ./mypdf/accept.pdf Graphic file (type pdf)
+ <use ./mypdf/accept.pdf>
+Package pdftex.def Info: ./mypdf/accept.pdf used on input line 1547.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+
+<./mypdf/accept.pdf, id=538, page=1, 597.51233pt x 845.0471pt>
+File: ./mypdf/accept.pdf Graphic file (type pdf)
+ <use ./mypdf/accept.pdf, page 1>
+Package pdftex.def Info: ./mypdf/accept.pdf, page1 used on input line 1547.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: ./mypdf/accept.pdf Graphic file (type pdf)
+
+<use ./mypdf/accept.pdf, page 1>
+Package pdftex.def Info: ./mypdf/accept.pdf, page1 used on input line 1547.
+(pdftex.def)             Requested size: 478.01051pt x 676.0386pt.
+File: ./mypdf/accept.pdf Graphic file (type pdf)
+ <use ./mypdf/accept.pdf, page 1>
+Package pdftex.def Info: ./mypdf/accept.pdf, page1 used on input line 1547.
+(pdftex.def)             Requested size: 478.01051pt x 676.0386pt.
+File: ./mypdf/accept.pdf Graphic file (type pdf)
+ <use ./mypdf/accept.pdf, page 1>
+Package pdftex.def Info: ./mypdf/accept.pdf, page1 used on input line 1547.
+(pdftex.def)             Requested size: 478.01051pt x 676.0386pt.
+File: ./mypdf/accept.pdf Graphic file (type pdf)
+
+<use ./mypdf/accept.pdf, page 1>
+Package pdftex.def Info: ./mypdf/accept.pdf, page1 used on input line 1547.
+(pdftex.def)             Requested size: 478.01051pt x 676.0386pt.
+ [79 <C:/Users/Hemangi/Dropbox/Report (1)/mypdf/accept.pdf>]
+! Undefined control sequence.
+l.1553 \subfloat
+                {\includegraphics[scale=0.6]{./myimg/dhruv.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/dhruv.jpg, id=572, 845.1575pt x 597.23125pt>
+File: ./myimg/dhruv.jpg Graphic file (type jpg)
+ <use ./myimg/dhruv.jpg>
+Package pdftex.def Info: ./myimg/dhruv.jpg used on input line 1553.
+(pdftex.def)             Requested size: 507.09842pt x 358.3415pt.
+
+Overfull \hbox (37.34343pt too wide) in paragraph at lines 1553--1554
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1558 \begin
+             {figure}[h]%
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.1560 \subfloat
+                {\includegraphics[scale=0.6]{./myimg/vikas.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/vikas.jpg, id=573, 845.1575pt x 597.23125pt>
+File: ./myimg/vikas.jpg Graphic file (type jpg)
+ <use ./myimg/vikas.jpg>
+Package pdftex.def Info: ./myimg/vikas.jpg used on input line 1560.
+(pdftex.def)             Requested size: 507.09842pt x 358.3415pt.
+
+Overfull \hbox (37.34343pt too wide) in paragraph at lines 1560--1561
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1565 \newpage
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.1581 \subfloat
+                {\includegraphics[scale=0.2]{./myimg/feedback.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/feedback.jpg, id=574, 2252.415pt x 3228.06pt>
+File: ./myimg/feedback.jpg Graphic file (type jpg)
+ <use ./myimg/feedback.jpg>
+Package pdftex.def Info: ./myimg/feedback.jpg used on input line 1581.
+(pdftex.def)             Requested size: 450.47502pt x 645.60057pt.
+
+
+LaTeX Warning: Float too large for page by 55.25002pt on input line 1584.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+! Undefined control sequence.
+l.1589 \subfloat
+                {\includegraphics[scale=0.7]{./myimg/offer.jpg}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./myimg/offer.jpg, id=575, 598.235pt x 846.16125pt>
+File: ./myimg/offer.jpg Graphic file (type jpg)
+ <use ./myimg/offer.jpg>
+Package pdftex.def Info: ./myimg/offer.jpg used on input line 1589.
+(pdftex.def)             Requested size: 418.76164pt x 592.30885pt.
+
+
+LaTeX Warning: Float too large for page by 1.9583pt on input line 1592.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1597 
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<./myimg/certi1.jpg, id=576, 2558.55875pt x 3519.1475pt>
+File: ./myimg/certi1.jpg Graphic file (type jpg)
+ <use ./myimg/certi1.jpg>
+Package pdftex.def Info: ./myimg/certi1.jpg used on input line 1599.
+(pdftex.def)             Requested size: 469.75499pt x 646.0919pt.
+
+
+LaTeX Warning: Float too large for page by 55.74135pt on input line 1602.
+
+<./myimg/certi2.jpg, id=577, 2558.55875pt x 3519.1475pt>
+File: ./myimg/certi2.jpg Graphic file (type jpg)
+ <use ./myimg/certi2.jpg>
+Package pdftex.def Info: ./myimg/certi2.jpg used on input line 1605.
+(pdftex.def)             Requested size: 469.75499pt x 646.0919pt.
+
+
+LaTeX Warning: Float too large for page by 55.74135pt on input line 1608.
+
+[80 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/dhruv.jpg>] [81 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/vikas.jpg>]
+[82 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/feedback.jpg>] [83 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/offer.jpg>]
+[84 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/certi1.jpg>] [85 <C:/Users/Hemangi/Dropbox/Report (1)/myimg/certi2.jpg>]
+Chapter 13.
+<./myimg/self.jpg, id=597, 1053.9375pt x 562.1pt>
+File: ./myimg/self.jpg Graphic file (type jpg)
+ <use ./myimg/self.jpg>
+Package pdftex.def Info: ./myimg/self.jpg used on input line 1622.
+(pdftex.def)             Requested size: 469.75499pt x 250.54112pt.
+ [86
+
+ <C:/Users/Hemangi/Dropbox/Report (1)/myimg/self.jpg>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1628 \newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.1645 ...wiki.gnome.org/action/show/Apps/Empathy#
+                                                  Project_Resources
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1645 ...me.org/action/show/Apps/Empathy#Project_
+                                                  Resources
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1646 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1646 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.1646 
+       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[87
+
+]
+! Misplaced alignment tab character &.
+l.1685 Ying Li 1 1 2 School of Information &
+                                             Electronic Engineering, Zhejiang
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[88] ("C:\Users\Hemangi\Dropbox\Report (1)\LaTeX1.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4136 strings out of 493921
+ 60609 string characters out of 3144871
+ 160093 words of memory out of 3000000
+ 7339 multiletter control sequences out of 15000+200000
+ 8561 words of font info for 30 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 39i,19n,46p,1280b,1550s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl1
+2.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on LaTeX1.pdf (94 pages, 16452652 bytes).
+PDF statistics:
+ 658 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+

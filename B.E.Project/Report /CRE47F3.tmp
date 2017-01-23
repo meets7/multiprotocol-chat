@@ -1,0 +1,1041 @@
+\documentclass{SureshLimkar}
+\renewcommand{\baselinestretch}{1.5}
+
+%Enter Suitable Information
+%May Differ
+%-----------------------------------------------------------------
+\def \statustitle {Mr.} %Title (Mr., Ms., Mrs.)
+\def \thesistype {Project Report} %Thesis Type
+\def \thesistitle {\lq\lq Optimizing Timetable using Genetic Algorithm\rq\rq} %Thesis Title
+\def \authorname {Chaudhari Yogesh G. [Roll No: 16]\\Khalwadekar Ajinkya D. [Roll No: 39]\\Mantri Manasi S. [Roll No: 47]\\Tekale Akash A. [Roll No: 73]} %Author
+\def \nameoncerti {\textbf{Chaudhari Yogesh G.\\Khalwadekar Ajinkya D.\\Mantri Manasi S.\\Tekale Akash A.}} %Author on Certificate
+%\def \RegNo {Roll No: 61,63,77,79} %Registration No.
+\def \course { B.E.} %Degree
+\def \Specialisation {Computer} % only for network student 
+\def \guidename {Mr. Suresh V. Limkar} %Guide Name
+\def \depthead {Mrs. S.N.Zaware} %Name of HoD
+\def \principal {Dr. P. B. Mane}
+\def \department {Computer Engineering} %Department
+\def \year {2013 - 2014} %Academic Year
+%-----------------------------------------------------------------
+
+%Common for all. Can be optional
+%-----------------------------------------------------------------
+\def \logofile {GHRCEMlogo.jpg} 
+\def \society {All India Shri Shivaji Memorial Society's}
+\def \insti1 {Institute Of Information Technology}
+\def \place {Shivaji Nagar, Pune - 01}
+%-----------------------------------------------------------------
+\def \acktext %Enter Acknowledgement here
+{
+\hspace {0.4 in}Apart from our own, the success of this report depends largely on the encouragement and guidelines of many others. We are especially grateful to our guide \textbf{Mr. Suresh V. Limkar} who has provided his guidance, expertise and encouragement. \\
+
+\hspace {0.3 in}We express our heartfelt gratefulness to \textbf{Dr. P.B. Mane}, Principal, AISSMS's IOIT and \textbf{Mrs. S.N. Zaware}, Head of Computer Engineering Department, AISSMS's IOIT, for their stimulating supervision whenever required during our project work. We are also thankful to the staff of \textbf{Computer Engineering Department} for their cooperation and support. \\
+
+\hspace {0.3 in}We would like to put forward our heartfelt acknowledgment to all our classmates, friends and all those who have directly or indirectly provided their overwhelming support during our project work and the development of this report.
+}
+
+\def \abstrtext %Enter Abstract Here
+{
+\hspace {0.5 in}The main objective of this project is to demonstrate our solution to the Timetabling problem. Timetabling is a kind of problem in which events (classes, exams, courses, etc) have to be arranged into a number of time-slots such that conflicts in using a given set of resources are avoided. There are usually a very large number of feasible solutions for it. Manual creation of timetable may lead to imperfections and partiality in the favor of a particular person or a group of people. Using Genetic algorithm, which revolves around the process of natural selection, we optimize this problem by choosing the best solution among the available.\\
+
+\textsl{\textbf{Keywords-} Genetic algorithm, Timetable, Optimization}
+}
+
+\begin{document}
+
+\maketitlepage %Title page
+
+\newpage
+
+\makecertipage %Certificate
+
+\newpage
+
+\makeackpage %Acknowledgement
+
+\newpage
+
+\makeabstrpage %Abstract
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+%\newpage
+\chapter{Introduction}
+\section{Overview}
+\hspace{0.5 in}Making a class schedule is one of those NP hard problems. The problem can be solved using a heuristic search algorithm to find the optimal solution, but it only works for simple cases. For more complex inputs and requirements, finding a considerably good solution can take a while, or it may be impossible. This is where genetic algorithms come in to the game. In this article, we would describe the genetic algorithm and how we plan to use it.
+\hspace{0.5 in} 
+\section{Brief Description}
+\hspace{0.5 in}When we make a class schedule, we must take into consideration many requirements (number of professors, students, classes and classrooms, size of classroom, laboratory equipment in classroom, and many others). These requirements can be divided into several groups by their importance. 
+\\ \\ Hard requirements (if we break one of these, then the schedule is infeasible):
+\begin{itemize}
+	\item A class can be placed only in a spare classroom.
+	\item No professor or student group can have more then one class at a time.
+	\item A classroom must have enough seats to accommodate all students.
+	\item To place a class in a classroom, the classroom must have laboratory equipment (computers, in our case) if the class requires it.
+\end{itemize}
+\newpage
+Some soft requirements (can be broken, but the schedule is still feasible):
+\begin{itemize}
+	\item Preferred time of class by professors.
+	\item Preferred classroom by professors.
+	\item Distribution (in time or space) of classes for student groups or professors.
+\end{itemize}
+\\
+\section{Problem Definition}
+\hspace{0.5 in}Develop a desktop application for teachers which will generate optimal time-table using genetic algorithm.
+
+
+\chapter{Literature Survey}
+\section{Timetable}
+\hspace{0.5 in}Organizations like universities and schools use
+timetables to schedule classes and lectures, assigning
+times and places to future events in a way that makes
+best use of the resources available. Universities in
+particular increasingly have to deal with a large
+number of courses and flexible degree structures. A
+timetable which is not well designed will be
+inconvenient and will be expensive in terms of
+wasted time and money. Timetabling is a search for
+‘Good Solutions’ (Timetables which meet stated
+requirements) in a space of possible timetables. The
+problem of creating a valid timetable involves
+scheduling classes, lecturers and rooms into a fixed
+number of periods, in such a way that no teacher,
+class or room is used more than once per period. We
+assume that the allocation of students into classes is
+fixed, and that classes are disjoint, that is, they have
+no student in common. In each period a class is
+taught a subject. It is possible for a subject to appear
+more than once in a period. A particular combination
+of a teacher, a subject, a room and a class is called a
+tuple. A tuple may be required more than once per
+week. Thus, timetabling problem may be phrased as
+scheduling a number of tuples such that a teacher,
+class or room does not appear more than once per
+period.\\
+\hspace{0.5 in}Tuples are formed with knowledge of the
+requirements of the various classes and teachers, as
+well as information on room availability. The
+relationship between teacher and subject is often
+fixed.
+\begin{itemize}
+	\item Teachers may prefer specific time slots.
+	\item Teachers may prefer specific rooms.
+\end{itemize}
+\section {Genetic Algorithm}
+ \hspace{0.5 in} \textbf{Genetic algorithms (GA)} were originally developed by John Holland, his colleagues, and students at the University of Michigan. Genetic algorithms have been successfully applied in a wide variety of fields, ranging from computer science and engineering to business management. The basic structure processed by genetic algorithms is a string of bits (1s and 0s), which is called a chromosome. The chromosome is composed of a set
+of genes, which are sections of the chromosome representing individual parameters. It presents a structure of gene values which includes the alphabet used to encode the chromosome and adds a wild card symbol, which is denoted by ‘ * ’. Each schema represents the set of all binary strings of length l, whose corresponding bit-positions contain bits identical to those ‘0’ and ‘1’ bits of the schema. The schema allows similarities to be expressed in a concise and powerful way.\\ \\
+
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{genetic.jpg}}%
+\caption{Flow Diagram of genetic algorithm}%
+\label{Flow Diagram of genetic algorithm}%
+\end{figure}
+
+Genetic algorithms are implemented in a computer simulation in which a population of abstract representations of candidate solutions to an optimization problem evolves toward better solutions. Traditionally, solutions are represented in binary as strings of 0s and 1s, but other encodings are also possible. The evolution usually starts from a population of randomly generated individuals and happens in generations. In each generation, the fitness of every individual in the population is evaluated, multiple individuals are stochastically selected from the current population (based on their fitness), and modified (recombined and possibly randomly mutated) to form a new population. The new population is then used in the next iteration of the algorithm. Commonly, the algorithm terminates when either a maximum number of generations has been produced, or a satisfactory fitness level has been reached for the population. If the algorithm has terminated due to a maximum number of generations, a satisfactory solution may or may not have been reached.
+\\
+A typical genetic algorithm requires:
+\begin{enumerate}
+	\item a genetic representation of the solution domain, 
+	\item a fitness function to evaluate the solution domain.
+\end{enumerate}
+
+A standard representation of the solution is as an array of bits. Arrays of other types and structures can be used in essentially the same way. The main property that makes these genetic representations convenient is that their parts are easily aligned due to their fixed size, which facilitates simple crossover operations. Variable length representations may also be used, but crossover implementation is more complex in this case. Tree-like representations are explored in genetic programming and graph-form representations are explored in evolutionary programming.\\
+
+The fitness function is defined over the genetic representation and measures the quality of the represented solution. The fitness function is always problem dependent. For instance, in the knapsack problem one wants to maximize the total value of objects that can be put in a knapsack of some fixed capacity. A representation of a solution might be an array of bits, where each bit represents a different object, and the value of the bit (0 or 1) represents whether or not the object is in the knapsack. Not every such representation is valid, as the size of objects may exceed the capacity of the knapsack. The fitness of the solution is the sum of values of all objects in the knapsack if the representation is valid, or 0 otherwise. In some problems, it is hard or even impossible to define the fitness expression; in these cases, interactive genetic algorithms are used.\\
+
+Once we have the genetic representation and the fitness function defined, GA proceeds to initialize a population of solutions randomly, then improve it through repetitive application of mutation, crossover, inversion and selection operators.\\
+
+\textbf{Initialization}\\
+
+Initially many individual solutions are randomly generated to form an initial population. The population size depends on the nature of the problem, but typically contains several hundreds or thousands of possible solutions. Traditionally, the population is generated randomly, covering the entire range of possible solutions (the search space). Occasionally, the solutions may be "seeded" in areas where optimal solutions are likely to be found.\\
+
+\textbf{Selection}\\
+
+During each successive generation, a proportion of the existing population is selected to breed a new generation. Individual solutions are selected through a fitness-based process, where fitter solutions (as measured by a fitness function) are typically more likely to be selected. Certain selection methods rate the fitness of each solution and preferentially select the best solutions. Other methods rate only a random sample of the population, as this process may be very time-consuming.\\
+
+Most functions are stochastic and designed so that a small proportion of less fit solutions are selected. This helps keep the diversity of the population large, preventing premature convergence on poor solutions. Popular and well-studied selection methods include roulette wheel selection and tournament selection.\\
+
+\textbf{Reproduction}\\
+
+The next step is to generate a second generation population of solutions from those selected through genetic operators: crossover (also called recombination), and/or mutation.\\
+
+For each new solution to be produced, a pair of "parent" solutions is selected for breeding from the pool selected previously. By producing a "child" solution using the above methods of crossover and mutation, a new solution is created which typically shares many of the characteristics of its "parents". New parents are selected for each new child, and the process continues until a new population of solutions of appropriate size is generated. Although reproduction methods that are based on the use of two parents are more "biology inspired", some research[1][2] suggests more than two "parents" are better to be used to reproduce a good quality chromosome.\\
+
+These processes ultimately result in the next generation population of chromosomes that is different from the initial generation. Generally the average fitness will have increased by this procedure for the population, since only the best organisms from the first generation are selected for breeding, along with a small proportion of less fit solutions, for reasons already mentioned above.\\
+
+\textbf{Termination}\\
+
+This generational process is repeated until a termination condition has been reached. Common terminating conditions are:
+\begin{itemize}
+	\item A solution is found that satisfies minimum criteria
+	\item Fixed number of generations reached
+	\item Allocated budget (computation time/money) reached
+  \item The highest ranking solution's fitness is reaching or has reached a plateau such that successive iterations no longer produce better results
+  \item Manual inspection
+  \item Combinations of the above 
+\end{itemize}
+
+
+\hspace{0.5 in} Genetic algorithms mimic the process of natural selection and it works
+as a powerful tool for solving complex optimization
+problems having very large search spaces. Unlike
+many heuristic methods which produce one sub-
+optimal solution at any time, GAs maintains many
+individual solutions in the form of population.
+Individuals i.e. parents are chosen from the
+population and are then mated to form a new
+individual (a child). To introduce diversity into the
+population children are further mutated. In real
+world it is assumed that individuals are born with
+various attributes of their parents, and thus inherit
+properties of their parents.\\ \\
+ \hspace{0.5 in}\textbf{Automated Timetables:} A lot of efforts have been
+made by many researchers to design a software that can
+produce the timetable automatically. Some efforts are
+really admirable. But till today no completely successful
+solution has been found for the aforesaid problem. The
+timetabling problem still needs a great degree of human
+intervention. Still it is not possible to generate a timetable
+automatically that is able to satisfy all the hard
+constraints.\\
+
+\textbf{Automated Timetabling Using GA:} Use of genetic
+algorithms may increase the possibility of producing a
+good timetable. In eve a relatively small scenario an
+enormous number of possible timetables can be defined,
+of which perhaps only a few fully meet the demand of the
+institution. A great deal of time and effort is expended in
+producing timetables manually or in a semi-automated
+fashion, and the solutions produced are often far from
+optimal.
+\section{Java}
+\hspace{0.5 in}The main reason behind choosing Java as a platform for our project is that, Java is platform independent. Using java we can implement the software which would be compatible on all the operating systems. Right now, we are trying to develope the software on \begin{itemize}
+	\item Microsoft Windows - since it is the most common OS
+	\item Linux - since it is the best open source OS
+\end{itemize}
+Java Supports the three main following features :
+\begin{itemize}
+	\item Portability
+	\begin{enumerate}
+		\item Output of a Java compiler is Non Executable Code i.e Bytecode.
+	  \item	Bytecode is a highly optimized set of instructions
+		\item Bytecode is executed by Java run-time system, which is called the Java Virtual Machine (JVM).
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{java.jpg}}%
+\caption{Working of Java}%
+\label{Working of Java}%
+\end{figure}
+	
+		\item JVM is an interpreter.
+		\item JVM accepts Bytecode as input and execute it.
+		\item Translating a Java program into bytecode makes it much easier to run a program in a wide variety of environments because only the JVM needs to be implemented for each platform.
+		\item For a given System we have Run-time package , once JVM is installed for particular system then any java program can run on it.
+		\item However Internal details of  JVM will differ from platform to platform but still all understand the Same Java Bytecode.
+	\end{enumerate}
+	\item Safety
+	\begin{enumerate}
+		\item Java program is executed by the JVM.
+		\item The JVM prevent java code from generating side effects outside of the system.
+		\item Safety is also enhanced by certain restrictions that exist in the Java language
+	\end{enumerate}
+	\item Speed
+	\begin{enumerate}
+		\item When a program is interpreted, it generally runs slower than the same program would run if compiled to executable code.
+		\item In Java Compiler will generate ByteCode which is highly optimized.
+		\item Thus running highly optimized code using interpreter makes execution of java program faster.
+	\end{enumerate}
+\end{itemize}
+\section{MySQL}
+\hspace{0.5 in} MySQL just like Java is platform independent. Thus, it is the best option available to use as a back-end database. MySQL can be used on both Linux and Windows. Also, MySQL is open source too. \\
+The following list shows the most important properties of MySQL.\\
+\begin{itemize}
+	\item \textbf{Relational Database System:} Like almost all other database systems on the market, MySQL is a relational database system.
+	\item \textbf{User interface:} There are a number of convenient user interfaces for administering a MySQL server.
+	\item \textbf{Programming languages:} There are quite a number of APIs (application programming interfaces) and libraries for the development of MySQL applications.
+	\item \textbf{Platform independence:} It is not only client applications that run under a variety of operating systems; MySQL itself (that is, the server) can be executed under a number of operating systems. The most important are Linux, Microsoft Windows etc.
+\end{itemize}\\
+\newpage
+\section{Eclipse IDE}
+Eclipse IDE too provides the following features :
+\begin{itemize}
+	\item Platform Independence
+	\item Portabilty
+	\item Good user interface, etc
+\end{itemize}
+Hence, it'll be a good tool for implementing the software.
+
+
+
+
+
+\chapter{Software Requirement Specification}
+
+\section{Introduction}
+\hspace{0.5 in}The purpose of this SRS is to give the requirement details for our project, \textbf{"Optimizing Timetable using Genetic Algorithm"}, which would be used in the college.
+
+\subsection{Project scope}
+\hspace{0.5 in} This software is useful in scheduling the weekly timetable at the departmental level in the college. It may be used by different departments, for their own scheduling purpose. This software also takes care of updating the timetable in case of appointing substitute teachers on daily basis. The efficiency of the software will help in its implementation at many levels.
+
+\subsection{User Classes and Characteristics}
+\hspace{0.5 in}There are many people who are expected to use this software, mainly the timetable creator of the department or college. The creator creates the timetable once every semester. He also uses the software to update the timetable daily if needed. \\
+\hspace{0.3 in}The staff members of the college also use this software to access the daily updated timetable if any.
+
+\subsection{Operating Environment}
+\hspace{0.5 in}The Operating Environment for the software part of the product consists of a PC or Laptop with Microsoft Windows or Linux operating environment. The hardware platform must be compatible with Microsoft Windows Operating Systems XP or hihger and Linux 11.04 or higher, as these are the most common operating system.
+\subsubsection{Software Requirements}
+\begin{itemize}
+	\item  Eclipse
+	\item Windows XP or higher / Linux 12.04 or higher
+	\item JDK 7, JRE 1.7
+	\item MySQL database
+\end{itemize}
+\subsubsection{Hardware Requirements}
+\begin{itemize}
+	\item 10 GB HDD
+	\item 128 MB RAM
+	\item 1.8 GHz processor
+\end{itemize}
+\subsection{Design and implementation Constraints}
+This software would be designed to work only on Linux and Windows platform using MySQL database. 
+\subsection{Assumptions and dependencies}
+Following are the assumptions that are required for the system:-
+\begin{itemize}
+	\item Users own the computer and know how to operate it.
+	\item That the hardware required by the system is already present.
+	\item That all the components are compatible.
+	\item A further assumption is that the computer being used can understand and interpret the programming of the software.
+\end{itemize}
+Following are the dependencies of the system:-
+\begin{itemize}
+	\item The system is completely dependent on Artificial Intelligence for its working.
+\end{itemize}
+
+\section{System features}
+\begin{itemize}
+	\item Generate Timetable
+		\begin{itemize}
+			\item Description and Priority \\ This is fundamental requirement of the proposed model. This is higher priority requirement.
+			\item Stimulus/Response Sequences \\ After analysis optimal timetables can be generated.
+			\item Response \\ Optimal Timetables must be generated.
+		\end{itemize}
+		\item Update Timetable
+		\begin{itemize}
+			\item Description and Priority \\ This is used only when updation is required in timetable, say when a particular teacher is unavailable or when a classroom is reserved for some other purpose.
+			\item Stimulus/Response Sequences \\ After analysis optimization would be applied on the remaining constraints.
+			\item Response \\ Optimized updation of the Timetables must be done.
+		\end{itemize}
+\end{itemize}
+
+\section{External interface requirement}
+
+\subsection{User Interfaces}
+\hspace{0.5 in}User can be any of the staff appointed as the timetable creator. the user must be provided with the software installed on his working machine. All the interactions would be done based on the GUI. Manual support can be given to understand the working of the system.
+
+\subsection{Hardware Interfaces}
+\begin{itemize}
+	\item Desktop Computer
+	\begin{itemize}
+		\item 40 GB HDD
+		\item 256 MB RAM
+    \item 1.2 GHz processor
+	\end{itemize}
+\end{itemize}
+
+\subsection{Software Interfaces}
+\begin{itemize}
+		\item Eclipse IDE
+		\item MySQL database
+	\end{itemize}
+\subsection{Communication Interface}
+\hspace{0.5 in}The system shall be a standalone product that does not require any communication interfaces.
+
+
+\section{Non-Functional Requirements}
+
+\subsection{Performance Requirements}
+\begin{itemize}
+	\item Optimization must be carried out on the generated Timetable.
+	\item The process of timetable generation and updation must but very fast.
+	\item User interface must be very friendly & self descriptive.
+	\item Database must be very secure.
+\end{itemize}
+\subsection{Safety Requirements}
+\begin{itemize}
+	\item There should be no misuse of the data available to the user.
+	\item Logging in into the system must be secured through password.
+	\item In case of failure of software or database, a backup must be maintained.
+\end{itemize}
+%\subsection{Security Requirements}
+
+\subsection{Software Quality Assurance}
+Software should have following quality attributes:
+\begin{enumerate}
+	\item {\textbf{Usability}: The system should be user friendly and self-explanatory. Since all users are familiar with the general usage of computers, no specific training should be required to operate the system.}
+	\item{\textbf{Correctness}: The application is needed to be very correct in giving the information.}
+	\item{\textbf{Portability and flexibility}: It should be flexible and portable enough to be used on any system.}
+	\item{\textbf{Reliability}: The system is reliable as its accuracy depends on the database of the system. Apart from this, the system should be highly Robust and easily Testable.}
+\end{enumerate}
+\newpage
+
+\section{System Design Diagrams}
+\subsection{Data Flow Diagram}
+
+ 
+\begin{itemize}
+	\item DFD: LEVEL 0: A context diagram is a top level (also known as level 0) Data Flow  Diagram. It only contains one process node(process 0) that generalizes the function of the entire system in relationship to external entities.
+	\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{dfdttgen.jpg}}%
+\caption{DFD:LEVEL 0}%
+\label{DFD:LEVEL 0}%
+\end{figure}
+
+
+\item DFD:LEVEL 1: The first level DFD shows the main processes within the system. Each of these processes can be broken into further processes until you reach the pseudo code. 
+	\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{dfdttgene1.jpg}}%
+\caption{DFD:LEVEL 1}%
+\label{DFD:LEVEL 1}%
+\end{figure}
+\end{itemize}}
+
+
+\newpage
+\subsection{Use case Diagram}
+ It shows the set of use cases and actors (special kind of the class and their relationship).Use case diagram addresses the static use case of the system. These diagrams are especially important in organizing and modeling the behavior of a system. \\ \\ \\
+\begin{itemize}
+	\item Diagram 1 :
+	\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{./img/d1.jpg}}%
+\caption{Use Cases for the Admin}%
+\label{Use Cases for the Admin}%
+\end{figure}
+
+	\newpage 
+	\item Diagram 2
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{./img/d2.jpg}}%
+\caption{Use Cases for the System}%
+\label{Use Cases for the System}%
+\end{figure}
+
+\end{itemize}
+\newpage
+\subsection{Class Diagram}
+A class diagram is a type of static structure diagram that describes the structure of a system by showing the system’s classes, their attributes, operations or methods and the relationships between the classes. \\ \\ \\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{./img/d5.jpg}}%
+\caption{System Class Diagram}%
+\label{System Class Diagram}%
+\end{figure}
+
+\newpage
+\subsection{Activity Diagram }
+It is  graphical representations of workflows of stepwise activities and actions with support and operational step-by-step workflows of components in a system.\\ \\ \\
+\begin{itemize}
+	\item Diagram 1
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{./img/d3.jpg}}%
+\caption{Admin Activity Diagram}%
+\label{Admin Activity Diagram}%
+\end{figure}
+
+	\newpage
+	\item Diagram 2
+\end{itemize}
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{./img/d4.jpg}}%
+\caption{User Activity Diagram}%
+\label{User Activity Diagram}%
+\end{figure}
+
+\newpage
+\subsection{Sequence Diagram}
+ A sequence diagram shows the time-ordering of message. It actually gives you the step by step flow of the system. It is dependent on time.\\ \\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./img/d12.jpg}}%
+\caption{Sequence Diagram}%
+\label{Sequence Diagram}%
+\end{figure}
+
+\newpage
+\subsection{Collaboration Diagram}
+A collaboration diagram shows the communication of messages within the system. It also gives the step by step flow of the system. It is dependent on time.\\ \\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{./img/d7.jpg}}%
+\caption{Collaboration/Communication Diagram}%
+\label{Collaboration Diagram}%
+\end{figure}
+\newpage
+\subsection{State Machine Diagram}
+A State machine diagram consists of states, transitions events and activities. It addresses the dynamic view of the system. \\ \\ \\
+\begin{itemize}
+	\item Diagram 1
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{./img/d8.jpg}}%
+\caption{Admin State Diagram}%
+\label{Admin State Diagram}%
+\end{figure}
+\newpage
+\item Diagram 2
+\end{itemize}
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.7]{./img/d9.jpg}}%
+\caption{User State Diagram}%
+\label{User State Diagram}%
+\end{figure}
+\newpage
+\subsection{Deployment Diagram}
+ A deployment diagram in the Unified Modeling Language models the physical deployment of artifacts on nodes. \\ \\ \\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{./img/d10.jpg}}%
+\caption{Deployment Diagram}%
+\label{Deployment Diagram}%
+\end{figure}
+
+\newpage
+\chapter{System's Software implementation}
+
+
+\section{Introduction}
+
+
+\section{System Architecture}
+
+%\subsection{Sequence Diagram}
+% A sequence diagram shows the time-ordering of message. It actually gives you the step by step flow of the system. It is dependent on time.\\ \\
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{SYSTEM_ARCHITECTURE.jpg}}%
+\caption{System Architecture}%
+\label{Sequence Diagram}%
+\end{figure}
+
+
+\section{Project estimate, Schedule and Team structure}
+
+
+\subsection{Project Estimate}
+
+
+\subsection{Schedule}
+\subsubsection{Progress Report with no GroupWise process}
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{plan1.jpg}}%
+\caption{Progress Report with no GroupWise process}%
+\label{Progress Report with no GroupWise process}%
+\end{figure}
+
+\newpage
+\subsubsection{Project Planner with no GroupWise selection}
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{plan2.jpg}}%
+\caption{Project Planner with no GroupWise selection}%
+\label{Project Planner with no GroupWise selection}%
+\end{figure}
+
+\newpage
+\subsubsection{Progress Report with Priority selection}
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{plan3.jpg}}%
+\caption{Progress Report with Priority selection}%
+\label{Progress Report with Priority selection}%
+\end{figure}
+
+\newpage
+\subsubsection{Project Planner with Priority selection}
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.675]{plan4.jpg}}%
+\caption{Project Planner with Priority selection}%
+\label{Project Planner with Priority selection}%
+\end{figure}
+
+\newpage
+\subsubsection{Progress Report with complete selection}
+\begin{figure}[h]%
+\centering
+\subfloat{\includegraphics[scale=0.5]{plan5.jpg}}%
+\caption{Progress Report with complete selection}%
+\label{Progress Report with complete selection}%
+\end{figure}
+
+\newpage
+\subsection{Team structure}
+
+
+
+\section{Databases}
+
+
+\subsection{Structure details}
+
+\subsubsection{1.Rooms}
+\begin{table}[h]
+\centering{}
+\begin {tabular} {|p{0.5 in}|p{0.5 in}|p{0.5 in}|} \hline
+\textbf{Id}	& \textbf{Name}&\textbf{Lab} \\ \hline
+\hspace{0.1 in}1 &	\hspace{0.1 in}r1 & \hspace{0.1 in}0\\ \hline
+\hspace{0.1 in}2 & \hspace{0.1 in}r2 & \hspace{0.1 in}0\\ \hline
+\hspace{0.1 in}3 &	\hspace{0.1 in}r3 & \hspace{0.1 in}0 \\ \hline
+\hspace{0.1 in}4 & \hspace{0.1 in}r4 & \hspace{0.1 in}1 \\ \hline
+\hspace{0.1 in}5 & \hspace{0.1 in}r5 & \hspace{0.1 in}1 \\ \hline
+\hspace{0.1 in}6 & \hspace{0.1 in}r6 & \hspace{0.1 in}1 \\ \hline
+%\hspace{0.3 in}4 & \hspace{0.3 in}Approximation & \hspace{0.5 in}H \\ \hline
+\end{tabular} 
+\caption{Rooms}
+\end{table}
+
+\newpage
+\subsubsection{2.Signup}
+\begin{table}[h]
+\centering{}
+\begin {tabular} {|p{0.5 in}|p{0.75 in}|p{0.75 in}|p{0.75 in}|p{0.75 in}|} \hline
+\textbf{Id}	& \textbf{Fullname} & \textbf{Designation} & \textbf{Username} & \textbf{Password} \\ \hline
+\hspace{0.1 in}1 &	\hspace{0.1 in}1 & \hspace{0.1 in}1 & \hspace{0.1 in}1 & \hspace{0.1 in}ffy \\ \hline
+\hspace{0.1 in}2 & \hspace{0.1 in}2 & \hspace{0.1 in}2 & \hspace{0.1 in}2 & \hspace{0.1 in}2 \\ \hline
+\hspace{0.1 in}3 &	\hspace{0.1 in}3 & \hspace{0.1 in}3 & \hspace{0.1 in}3 & \hspace{0.1 in}33 \\ \hline
+%\hspace{0.1 in}4 & \hspace{0.1 in}r4 & \hspace{0.1 in}1 \\ \hline
+%\hspace{0.1 in}5 & \hspace{0.1 in}r5 & \hspace{0.1 in}1 \\ \hline
+%\hspace{0.1 in}6 & \hspace{0.1 in}r6 & \hspace{0.1 in}1 \\ \hline
+%\hspace{0.3 in}4 & \hspace{0.3 in}Approximation & \hspace{0.5 in}H \\ \hline
+\end{tabular} 
+\caption{Signup}
+\end{table}
+
+\subsubsection{3.Subjects}
+\begin{table}[h]
+\centering{}
+\begin {tabular} {|p{0.5 in}|p{0.75 in}|p{0.75 in}|p{0.75 in}|p{0.75 in}|p{0.75 in}|p{1.5 in}|} \hline
+\textbf{Id}	& \textbf{Name} & \textbf{Class} & \textbf{Practical} & \textbf{Update1} & \textbf{Dayskipped} & \textbf{Lectures per week} \\ \hline
+\hspace{0.1 in}1 &	\hspace{0.1 in}s1 & \hspace{0.1 in}2 & \hspace{0.1 in}0 & \hspace{0.1 in}0 & \hspace{0.1 in}NULL & \hspace{0.4 in}2 \\ \hline
+%\hspace{0.1 in}2 & \hspace{0.1 in}2 & \hspace{0.1 in}2 & \hspace{0.1 in}2 & \hspace{0.1 in}2 \\ \hline
+%\hspace{0.1 in}3 &	\hspace{0.1 in}3 & \hspace{0.1 in}3 & \hspace{0.1 in}3 & \hspace{0.1 in}33 \\ \hline
+%\hspace{0.1 in}4 & \hspace{0.1 in}r4 & \hspace{0.1 in}1 \\ \hline
+%\hspace{0.1 in}5 & \hspace{0.1 in}r5 & \hspace{0.1 in}1 \\ \hline
+%\hspace{0.1 in}6 & \hspace{0.1 in}r6 & \hspace{0.1 in}1 \\ \hline
+%\hspace{0.3 in}4 & \hspace{0.3 in}Approximation & \hspace{0.5 in}H \\ \hline
+\end{tabular} 
+\caption{Subjects}
+\end{table}
+
+\subsubsection{4.Teachers}
+\begin{table}[h]
+\centering{}
+\begin {tabular} {|p{0.5 in}|p{0.75 in}|p{1 in}|p{0.75 in}|p{0.75 in}|p{0.75 in}|p{0.75 in}|p{0.75 in}|} \hline
+\textbf{Id}	& \textbf{Name} & \textbf{No. of subjects} & \textbf{Subject 1} & \textbf{Subject 2} & \textbf{Subject 3} & \textbf{Update 1} & \textbf{Dayskipped} \\ \hline
+\hspace{0.1 in}1 &	\hspace{0.1 in}t1 & \hspace{0.1 in}2 & \hspace{0.1 in}1 & \hspace{0.1 in}2 & \hspace{0.1 in}0 & \hspace{0.1 in}0 & \hspace{0.1 in}2 \\ \hline
+%\hspace{0.1 in}2 & \hspace{0.1 in}2 & \hspace{0.1 in}2 & \hspace{0.1 in}2 & \hspace{0.1 in}2 \\ \hline
+%\hspace{0.1 in}3 &	\hspace{0.1 in}3 & \hspace{0.1 in}3 & \hspace{0.1 in}3 & \hspace{0.1 in}33 \\ \hline
+%\hspace{0.1 in}4 & \hspace{0.1 in}r4 & \hspace{0.1 in}1 \\ \hline
+%\hspace{0.1 in}5 & \hspace{0.1 in}r5 & \hspace{0.1 in}1 \\ \hline
+%\hspace{0.1 in}6 & \hspace{0.1 in}r6 & \hspace{0.1 in}1 \\ \hline
+%\hspace{0.3 in}4 & \hspace{0.3 in}Approximation & \hspace{0.5 in}H \\ \hline
+\end{tabular} 
+\caption{Teachers}
+\end{table}
+
+ 
+ \subsection{Normalization}
+
+\subsubsection{1. 1NF}
+\hspace{0.5 in}First normal form (1NF) is a property of a relation in a relational database. A relation is in first normal form if the domain of each attribute contains only atomic values, and the value of each attribute contains only a single value from that domain. \\
+\hspace{0.5 in} 
+
+
+\subsubsection{2. 2NF}
+\hspace{0.5 in}A table that is in first normal form (1NF) must meet additional criteria if it is to qualify for second normal form. Specifically: a table is in 2NF if and only if it is in 1NF and no non-prime attribute is dependent on any proper subset of any candidate key of the table. A non-prime attribute of a table is an attribute that is not a part of any candidate key of the table. \\
+
+\subsubsection{3. 3NF}
+\hspace{0.5 in}The third normal form (3NF) is a normal form used in database normalization. 3NF was originally defined by E.F. Codd in 1971.[1] Codd's definition states that a table is in 3NF if and only if both of the following conditions hold: 
+
+\hspace{0.5 in}1.The relation R (table) is in second normal form (2NF).
+
+\hspace{0.5 in}2.Every non-prime attribute of R is non-transitively dependent (i.e. directly dependent) on every superkey of R.
+
+
+\subsection{Entity Relationship Diagram}
+
+
+\section{Module Description}
+
+
+\subsection{Input}
+
+
+\subsection{Algorithm}
+
+
+\subsection{Output}
+
+
+\section{Business Logic and Architecture}
+
+
+\chapter{Testing}
+
+
+\chapter{Code Snippet}
+\chapter{Result}
+\newpage
+\chapter{Conclusion and Future Scope}
+\section{Advantages, Disadvantages, Appications}
+\subsection{Advantages}
+The advantages of using this software are :
+\begin{itemize}
+	\item Optimal Timetables would be generated eveytime.
+	\item The process of timetable creation would be faster.
+	\item The process of timetable updation would be faster.
+	\item The efficiency of the procedure would increase.
+\end{itemize}
+\subsection{Disadvantages}
+\hspace{0.5 in} For now there are no disadvantages of this system except for the fact that, this software which uses artificial intelligence, will have a negative effect on the human intelligence.
+\subsection{Applications}
+
+\section{Conclusion}
+
+\section{Future Scope}
+\begin{itemize}
+	\item We are designing this software currently only for weekly schedule generation at the departmental level. This software can be extended to college level.
+	\item This software can be further extended to solve another similar problem like the timetabling problem, which is the University exam scheduling problem.
+	\item Features can be added to the system to remove the limitations of using the software only in the educational institutes. This  software can be brought into use in hospitals, offices, factories, etc.
+\end{itemize}  
+\chapter{References}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Appendix A - Project Analysis}
+\section{Set Theory Analysis}
+\textbf{Set of Hours, Professors and Courses}\\
+H = \{h_1 , h_2 , h_3 , h_4,  h_5 , h_6 , h_7 ,h_8 , h_9 , h_{10} \}\\
+P = \{p_1 , p_2 , p_3 \}\\
+C = \{c_1 , c_2 , c_3 \}\\ \\
+\textbf{Availability of Professors}\\
+A(p_1 ) = \{h_1 , h_2 , h_5 , h_6 , h_9 , h_{10} \}\\
+A(p_2 ) = \{h_1 , h_2 , h_3 , h_4,  h_5 , h_6 , h_7 , h_8 , h_9 , h_{10} \}\\
+A(p_3 ) = \{h_3 , h_4,  h_7 , h_8 , h_9 \}\\ \\
+\textbf{Availability of Courses}\\ 
+A(c_1 ) = \{h_2 , h_5 , h_6 , h_7 , h_10 \}\\
+A(c_2 ) = \{h_3 , h_4,  h_5 , h_8 , h_10 \}\\
+A(c_3 ) = \{h_1 , h_2 , h_3 , h_4,  h_5 , h_6 , h_7 , h_8 , h_9 , h_{10} \}\\ \\
+\textbf{Availability of Rooms}\\
+A(r_1 ) = {h_1 , h_3 , h_5 , h_7 , h_9 }\\
+A(r_2 ) = {h_1 , h_2 , h_4 , h_5 , h_6 , h_7 , h_8 }\\
+A(r_3 ) = {h_3 , h_4 , h_5 , h_6 , h_7 }\\ \\
+\textbf{Maximum Professor Load}\\
+L(p_1 ) = 3, L(p_2 ) = 4, L(p_3 ) = 3\\ \\
+\textbf{Room Loads}\\
+U(r_1 ) = 6, U(r_3 ) = 7, U(r_3 ) = 4\\ \\
+\textbf{Desired Number of Sections}\\
+S(c_1 ) = 3, S(c_2 ) = 4, S(c_3 ) = 3 \\
+\textbf{Required number of Sections}\\
+R(p, c) =\bordermatrix{~ &c_1 &c_2 &c_3 \cr
+											 p_1 &2 &1 &0 \cr
+											 p_2 &0 &2 &2 \cr
+											 p_3 &1 &1 &1 \cr
+											}\\
+\\ \textbf{Willing to Teach Function}\\
+R(p, c) =\bordermatrix{~ &c_1 &c_2 &c_3 \cr
+											 p_1 &T &T &F \cr
+											 p_2 &F &T &T \cr
+											 p_3 &T &T &T \cr
+											} \\ \\
+\textbf{Room Suitability Function}\\
+RS(c, r) =\bordermatrix{~ &r_1 &r_2 &r_3 \cr
+											 c_1 &F &T &T \cr
+											 c_2 &T &T &F \cr
+											 c_3 &T &F &T \cr
+											} \\ \\
+											
+\textbf{Timetable (Characteristic Function)} =\\
+\{f(p_1 , c_1 , h_2 , r_2 ) = 1\\
+f(p_1 , c_1 , h_5 , r_2 ) = 1,\\
+f(p_1 , c_1 , h_6 , r_2 ) = 1,\\
+f(p_3 , c_2 , h_3 , r_1 ) = 1,\\
+f(p_3 , c_2 , h_4 , r_2 ) = 1,\\
+f(p_3 , c_2 , h_8 , r_2 ) = 1,\\
+f(p_3 , c_2 , h_9 , r_1 ) = 1,\\
+f(p_2 , c_3 , h_1 , r_1 ) = 1,\\
+f(p_2 , c_3 , h_4 , r_3 ) = 1,\\
+f(p_2 , c 3 , h_9 , r_3 ) = 1\}\\ \\
+
+f(c, t, h, r) = 0 for all (c, t, h, r) not listed\\ \\
+
+\textbf{Timetable (Set Notation)} =\\
+S = {(p_1 , c_1 , h_2 , r_2 ),\\
+(p_1 , c_1 , h_5 , r_3 ),\\
+(p_1 , c_1 , h_6 , r_3 ),\\
+(p_3 , c_2 , h_3 , r_1 ),\\
+(p_3 , c_2 , h_4 , r_2 ),\\
+(p_3 , c_2 , h_8 , r_2 ),\\
+(p_3 , c_2 , h_9 , r_1 ),\\
+(p_2 , c_3 , h_1 , r_1 ),\\
+(p_2 , c_3 , h_4 , r_3 ),\\
+(p_2 , c_3 , h_9 , r_3 )}\\
+(c, t, h, r) \notin S for all f(c, t, h, r) = 0
+
+\section{Mathematical Model}
+We define the following sets to be used in our proposed integer programming formulation:\\
+\hspace{0.5 in}I  \quad   set of all teachers\\
+\hspace{0.5 in}J  \quad   set of all courses\\
+\hspace{0.5 in}K  \quad   set of all time periods\\
+\hspace{0.5 in}J$_{{i}}$ \quad set of courses that could be taught by teacher i (i \in I)\\
+\hspace{0.5 in}L$_{{i}}$ \quad maximum load (in terms of the number of courses) of teacher i (i \in I)\\
+\hspace{0.5 in}C$_{{k}}$ \quad number of classrooms available during time period k (k \in K)\\
+\hspace{0.5 in}PC$_{{ij}}$ \quad value given by teacher i on the preference to be assigned to teach course j (j \in J$_{{i}}$ , i \in I)\\
+\hspace{0.5 in}PT$_{{ik}}$ \quad value given by teacher i on the preference to be assigned to teach in time period k (i \in I, k \in K)\\ \\ \\
+
+We also define the following decision variables:\\
+
+X$_{{ijk}}$ = \left\{ 
+  \begin{array}{l}
+	  1 \quad \quad \textit{if teacher i teaches course j at time period k}\\
+		
+    0 \quad \quad otherwise\quad \quad (i \in I, j \in J, k \in K)
+  \end{array} \right.\ 
+
+		A mathematical programming model for the timetabling problem that we address can then be formulated as follows:\\ \\
+	Maximise
+	\begin{equation}
+	\sum_{\substack{i}}\sum_{\substack{j}}\sum_{\substack{k}}	(PC_{ij} + PT_{ik}) \texttt{x}  X_{ijk}
+	\end{equation}
+	subject to
+	
+	\begin{equation}
+	1 \leq \sum_{\substack{j}}\sum_{\substack{k}} X_{ijk} \leq L_{i}\quad \quad \quad i \in I
+	\end{equation}
+	
+	\begin{equation}
+	\sum_{\substack{i}}\sum_{\substack{j}} X_{ijk} \leq C_{k}\quad \quad \quad k \in K
+	\end{equation}
+	
+	\begin{equation}
+	\sum_{\substack{j}}X_{ijk} \leq 1 \quad \quad \quad i \in I, k \in K
+	\end{equation}
+	
+	\begin{equation}
+	\sum_{\substack{i}}\sum_{\substack{k}} X_{ijk} = 1\quad \quad \quad j \in J
+	\end{equation}
+	
+	\begin{equation}
+	X_{ijk} = 0\quad \quad \quad i \in I j \notin J k \in K
+	\end{equation}
+	
+	\begin{equation}
+	X_{ijk} \in \texttt{{0,1}}\quad \quad \quad i \in I j \in J k \in K
+	\end{equation}
+\\	
+The objective function (5.1) reflects a preference function that needs to be maximized. It refers to the
+preferences of assigning course j to teacher i at time period k. Thus, the course preference can not only be
+chosen by the teacher, but the time preference can be reflected as well. In our model, we have assumed
+that both preferences are equally important. However, the values for these preferences can be scaled, or
+the preference function can be modified according to the actual timetabling scenarios encountered.\\
+Equation (5.2) ensures that each teacher has to teach at least one course, while not allowing the teacher to
+teach more than the maximum load of courses allowed for each teacher. Here, the load refers to the
+number of courses that are assigned to the teacher. Equation (5.3) represents the constraint on the number of
+classrooms available during each time period. Equation (5.4) ensures that each teacher can only teach at
+most one course at any time period. Equation (5.5) states that each course has to be allocated with a teacher
+at a particular time period. Equation (5.6) ensures that teachers will not be assigned courses that they are
+unable to teach. Finally, constraints (5.7) impose the 0-1 restrictions on the decision variables X_{ijk} .
+
+
+\section{Algorithmic strategy and feasibility analysis}
+
+\subsection {Outline of the Basic Genetic Algorithm}
+\begin{enumerate}
+	\item \textbf{Start :} Generate random population of n chromosomes (suitable solutions for the problem)
+	\item \textbf{Fitness :} Evaluate the fitness f(x) of each chromosome x in the population
+	\item \textbf{New population :} Create a new population by repeating following steps until the new population is complete
+	\begin{enumerate}
+		\item \textbf{Selection :} Select two parent chromosomes from a population according to their fitness (the better fitness, the bigger chance to be selected)
+		\item \textbf{Crossover :} With a crossover probability cross over the parents to form a new offspring (children). If no crossover was performed, offspring is an exact copy of parents.
+		\item \textbf{Mutation :} With a mutation probability mutate new offspring at each locus (position in chromosome).
+		\item \textbf{Accepting :} Place new offspring in a new population
+	\end{enumerate}
+	\item \textbf{Replace :} Use new generated population for a further run of algorithm
+	\item \textbf{Test :} If the end condition is satisfied, stop, and return the best solution in current population
+	\item \textbf{Loop :} Go to step 2
+\end{enumerate}\\
+
+\chapter{Appendix B}
+
+\section{Introduction}
+
+Testing Strategies:
+Software Testing Strategies should follow generic characteristics:
+\begin{itemize}
+	\item Testing begins at module level and works ‘outward’ toward the integration of the entire computer base system.
+	\item Different testing techniques are applied at each point.
+	\item Testing is conducted by developer of software.
+\end{itemize}
+
+\hspace{0.5 in}Testing challenges the assumptions, risks and uncertainty inherent the work of the other disciplines, addressing those concerns by concrete demonstration and impartial evaluation. First testing software is enormously difficult. The different ways a given program can behave are unquantifiable. Second, testing is typically done without a clear methodology so results vary from project to project. A strategy for software testing begins with Unit Testing.\\
+
+Testing Objectives:\\
+
+\hspace{0.5 in}The purpose of testing is to uncover the errors in the software. The objective behind testing is to correct and rectify the errors that are present in the current work product. There are certain rules of testing that can serve as testing objectives:
+\begin{enumerate}
+	\item Testing is the process of executing the program with the intent of finding errors.
+	\item A good test is the one which has higher probability of finding an error.
+	\item A successful test is the one which uncovers a yet undetected error.
+\end{enumerate}
+
+\textbf{Unit Testing:}\\
+\hspace{0.5 in}It concentrates on each unit of software as implemented in source code. Unit testing focuses verification effort on the smallest unit of software design the software component or module. Using the component-level designed description as a guide, important control path are tested to uncover error is limited by constrained for unit testing. The unit testing is white-box oriented, and the step can be conducted in parallel for multiple components.\\
+\hspace{0.5 in}Unit testing is normally considered as an adjunct to the coding step. After source level code has been developed, reviewed, and verified for correspondence to component-level designed, unit rest design begins. Each test case should be coupled with a set to expected results.\\
+\hspace{0.5 in}The Testing process progresses by moving to Integration testing, where the focus is on the design and construction of software design. Next Validation Testing is encountered, where requirements established as part of project requirement analysis are validated against the project that has been constructed. Finally we arrived at System Testing, where project and other system elements are tested as a whole.  \\
+
+\textbf{System Testing:}\\
+\hspace{0.5 in}System testing is actually a series of different tests whose purpose is to fully exercise the computer based system.\\
+In system testing, the platform must be as close to production used in the customer’s environment, we can more accurately test ‘softer system features (performance, security and fault-tolerance).\\
+
+
+\textbf{White Box Testing:}\\
+\hspace{0.5 in}White box approach focuses on the inner structure of the software to be tested. Tester must have knowledge of the structure. Using White box testing methods, the software engineer can derive test cases that:
+\begin{enumerate}
+	\item Guarantee that all independent paths within a module have been exercised at least once.
+	\item Exercise all logical decisions.
+	\item Execute all loops at their boundaries and in their operational bounds
+	\item Exercise internal data structures to maintain their validity.
+\end{enumerate}
+
+\textbf{Black Box Testing:}\\
+\hspace{0.5 in}Black Box Testing focuses on the functional Requirements of the software. It enables the software engineer to derive sets of input conditions that will fully exercise all functional requirements for a program.\\
+Using Black box approach, a tester considers the software-under-test to be an opaque box. There is no knowledge of its inner structure. The tester only has knowledge of what it does. The size of the software-under-test using this approach can vary from a simple module, member function, or subsystem to a complete system. \\
+\hspace{0.5 in}After a system has been successfully built, it becomes necessary to test it prior to deployment. Informally, Software Testing can be defined as “the process of exercising a program with the specific intent of finding errors prior to delivery to the end user”.\\
+The main purpose of Testing is to:
+\begin{itemize}
+	\item Debug and rectify errors in the product.
+	\item See that the product built conforms to the requirements specified.
+	\item Ensure that the product meets certain performance requirements.
+	\item It is also an indication of quality of the product.
+\end{itemize}
+
+\section{Test Item (Function)}
+For the basic implementation of the system we will use the Incremental model and we will do the unit testing for testing each module. In our system the module are calculation of the ASP, calculation of the power saved by using proposed system, No Data Loss Check, Traffic Analysis, Implementation of wake up packet.
+
+\section{Feature to be tested}
+\begin{table}[h]
+\centering{}
+\begin {tabular} {|p{0.7 in}|p{3 in}|p{1.2 in}|} \hline
+\textbf{Sr. No.}	& \hspace{0.3 in}\textbf{Feature to be tested(Use-Cases)}&\textbf{Level  of   testing required /priority} \\ \hline
+\hspace{0.3 in}1 &	\hspace{0.3 in}Timetable creation & \hspace{0.5 in}H\\ \hline
+\hspace{0.3 in}2 & \hspace{0.3 in}Timetable updation & \hspace{0.5 in}H \\ \hline
+\hspace{0.3 in}3 &	\hspace{0.3 in}Fitness function evaluation & \hspace{0.5 in}H \\ \hline
+\hspace{0.3 in}4 & \hspace{0.3 in}Crossover stages & \hspace{0.5 in}H \\ \hline
+\hspace{0.3 in}4 & \hspace{0.3 in}Input Validation & \hspace{0.5 in}H \\ \hline
+\hspace{0.3 in}4 & \hspace{0.3 in}Constraint satisfaction & \hspace{0.5 in}H \\ \hline
+\hspace{0.3 in}4 & \hspace{0.3 in}Approximation & \hspace{0.5 in}H \\ \hline
+\end{tabular} 
+\caption{Features to be tested}
+\end{table}
+
+\textbf{Reliability Testing:}\\
+\hspace{0.5 in}In this we list down those parts of the system whose testing gives us the reliability of the system and those are
+•	Calculation Of Power Saved.
+•	No Data Loss .
+•	Switching Network Interface to Silent Mode.
+•	Implementation Of Wake Up packet.
+•	ASP calculation.
+
+\chapter{Appendix C}
+%\section{Progress Report with no GroupWise process}
+%\centering
+%\subfloat{\includegraphics[scale=0.675]{plan1.jpg}}%
+%\caption{Progress Report with no GroupWise process}%
+%\label{Progress Report with no GroupWise process}%
+%\end{figure}
+
+%\newpage
+%\section{Project Planner with no GroupWise selection}
+%\begin{figure}[h]%*
+%\centering
+%\subfloat{\includegraphics[scale=0.675]{plan2.jpg}}%
+%\caption{Project Planner with no GroupWise selection}%
+%\label{Project Planner with no GroupWise selection}%
+%\end{figure}
+
+%\newpage
+%\section{Progress Report with Priority selection}
+%\begin{figure}[h]%
+%\centering
+%\subfloat{\includegraphics[scale=0.675]{plan3.jpg}}%
+%\caption{Progress Report with Priority selection}%
+%\label{Progress Report with Priority selection}%
+%\end{figure}
+
+%\newpage
+%\section{Project Planner with Priority selection}
+%\begin{figure}[h]%
+%\centering
+%\subfloat{\includegraphics[scale=0.675]{plan4.jpg}}%
+%\caption{Project Planner with Priority selection}%
+%\label{Project Planner with Priority selection}%
+%\end{figure}
+
+%\newpage
+%\section{Progress Report with complete selection}
+%\begin{figure}[h]%
+%%\subfloat{\includegraphics[scale=0.5]{plan5.jpg}}%
+%\caption{Progress Report with complete selection}%
+%\label{Progress Report with complete selection}%
+%\end{figure}
+
+\chapter{Appendix D}
+We presented our paper - \textbf{"A new paradigm shift over a traditional approach of timetable scheduling by using Genetic Algorithm"} at the 3rd International Conference on Recent Trends in Engineering and Technology (ICRTET'2014) organized by SNJB's Late Sau. Kantabai Bhavarlalji Jain College of Engineering, Nasik, Maharashtra,India and powered by \textbf{ELSEVIER Science::Technology}.
+ 
+\begin{figure}%
+\includegraphics[width=0.80\columnwidth]{Newdoc1.jpg}%
+\caption{}%
+\label{}%
+\end{figure}
+
+\chapter{Self Evaluation Sheet}
+
+\begin{thebibliography}{9}
+\bibitem{label0}	Jian Ni, Ning-Ning Yang, "Genetic Algorithm and its Application in Scheduling System",TELKOMNIKA, Vol. 11, No. 4, April 2013
+
+\bibitem{label1}Radomir Perzina and Jaroslav Ramik, "SELF-LEARNING GENETIC ALGORITHM FOR A TIMETABLING PROBLEM WITH FUZZY CONSTRAINTS",IJICIC,Volume 9, Number 11, April 2013 
+
+\bibitem{label2}Munther Hameed Abed, Alicia Y. C. Tang, "Hybridizing Genetic Algorithm and Record-to-Record Travel Algorithm for Solving Uncapacitated Examination Timetabling Problem",electronic Journal of Computer Science and Information Technology (eJCSIT), Vol. 4, No. 1, 2013
+
+\bibitem{label3}Kuldeep Kumar, Sikander, Ramesh Sharma, Kaushal Mehta,"Genetic Algorithm Approach to Automate University Timetable",International Journal of Technical Research(IJTR)Vol 1,Issue 1,Mar-Apr 2012
+
+\bibitem{label4}Ping Guo, Jing-xin Chen,Lin Zhu,"The Design and Implementation of timetable system based on genetic algorithm",2011 International Conference on Mechatronic Science, Electric Engineering and Computer August 19-22, 2011, Jilin, China
+
+\bibitem{label5}Shengxiang Yang, Sadaf Naseem Jat, "Genetic Algorithms With Guided and Local Search Strategies for University Course Timetabling",IEEE TRANSACTIONS ON SYSTEMS, MAN, AND CYBERNETICS—PART C: APPLICATIONS AND REVIEWS, VOL. 41, NO. 1, JANUARY 2011
+
+\bibitem{label6}Nabeel R. AL-Milli,"Hybrid Genetic Algorithms with Great Deluge For Course Timetabling",IJCSNS International Journal of Computer Science and Network Security, VOL.10 No.4, April 2010
+
+\bibitem{label7}M.F.M. Sabri, M.H. Husin, S.K. Chai,"Development of a Timetabling Software Using Soft-computing Techniques With a Case Study", 2010 IEEE
+\bibitem{label8}Arindam Chaudhuri, Kajal De, "Fuzzy Genetic Heuristic for University Course Timetable Problem",Int. J. Advance. Soft Comput. Appl., Vol. 2, No. 1, March 2010.
+\bibitem{label9}www.wikipedia.com
+\bibitem{label10}www.stackoverflow.com
+\bibitem{label11}www.youtube.com
+\end{thebibliography}
+
+\end{document}
+

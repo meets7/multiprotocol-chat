@@ -1,0 +1,97 @@
+\contentsline {chapter}{\numberline {1}Introduction}{8}
+\contentsline {section}{\numberline {1.1}Overview}{8}
+\contentsline {section}{\numberline {1.2}Brief Description}{8}
+\contentsline {section}{\numberline {1.3}Problem Definition}{10}
+\contentsline {chapter}{\numberline {2}Literature Survey}{11}
+\contentsline {section}{\numberline {2.1}Brief Overview}{11}
+\contentsline {section}{\numberline {2.2}The protocol: XMPP}{12}
+\contentsline {section}{\numberline {2.3}Features of XMPP}{13}
+\contentsline {section}{\numberline {2.4}Service providers: Facebook and Google}{14}
+\contentsline {section}{\numberline {2.5}Related Work}{15}
+\contentsline {section}{\numberline {2.6}Java}{17}
+\contentsline {chapter}{\numberline {3}Software Requirement Specification}{19}
+\contentsline {section}{\numberline {3.1}Introduction}{19}
+\contentsline {subsection}{\numberline {3.1.1}Project scope}{19}
+\contentsline {subsection}{\numberline {3.1.2}User Classes and Characteristics}{20}
+\contentsline {subsection}{\numberline {3.1.3}Operating Environment}{20}
+\contentsline {subsubsection}{Software Requirements}{20}
+\contentsline {subsubsection}{Hardware Requirements}{20}
+\contentsline {subsection}{\numberline {3.1.4}Design and implementation Constraints}{21}
+\contentsline {subsection}{\numberline {3.1.5}Assumptions and dependencies}{21}
+\contentsline {section}{\numberline {3.2}System features}{22}
+\contentsline {subsection}{\numberline {3.2.1}External Interface Requirements}{22}
+\contentsline {subsubsection}{User Interface}{22}
+\contentsline {subsubsection}{Hardware Interface}{22}
+\contentsline {subsubsection}{Software Interfaces}{22}
+\contentsline {subsubsection}{Communication Interfaces}{23}
+\contentsline {section}{\numberline {3.3}Non-Functional Requirements}{24}
+\contentsline {subsection}{\numberline {3.3.1}Performance Requirements}{24}
+\contentsline {subsection}{\numberline {3.3.2}Safety Requirements}{24}
+\contentsline {subsection}{\numberline {3.3.3}Security Requirements}{24}
+\contentsline {subsubsection}{Desktop}{24}
+\contentsline {subsubsection}{Android}{24}
+\contentsline {subsection}{\numberline {3.3.4}Software Quality Assurance}{25}
+\contentsline {section}{\numberline {3.4}System Design Diagrams}{26}
+\contentsline {subsection}{\numberline {3.4.1}Use case Diagram}{26}
+\contentsline {subsection}{\numberline {3.4.2}Class Diagram}{27}
+\contentsline {subsection}{\numberline {3.4.3}Activity Diagram }{28}
+\contentsline {subsection}{\numberline {3.4.4}Sequence Diagram}{29}
+\contentsline {subsection}{\numberline {3.4.5}Component Diagram}{30}
+\contentsline {subsection}{\numberline {3.4.6}Composite Structure Diagram}{31}
+\contentsline {subsection}{\numberline {3.4.7}Component Diagram}{32}
+\contentsline {subsection}{\numberline {3.4.8}Deployment Diagram}{33}
+\contentsline {chapter}{\numberline {4}System's Software implementation}{34}
+\contentsline {section}{\numberline {4.1}Introduction}{34}
+\contentsline {section}{\numberline {4.2}System Architecture}{35}
+\contentsline {section}{\numberline {4.3}Project estimate, Schedule and Team structure}{36}
+\contentsline {subsection}{\numberline {4.3.1}Project Estimates}{36}
+\contentsline {subsection}{\numberline {4.3.2}Schedule}{36}
+\contentsline {subsection}{\numberline {4.3.3}Team structure}{38}
+\contentsline {section}{\numberline {4.4}Module Description}{39}
+\contentsline {subsection}{\numberline {4.4.1}Module 1:The Core component}{39}
+\contentsline {subsubsection}{RFC 6120 Core Functionality}{39}
+\contentsline {subsection}{\numberline {4.4.2}Module 2: Functional Module}{40}
+\contentsline {subsection}{\numberline {4.4.3}Module 3:Graphical User Interface Module}{40}
+\contentsline {section}{\numberline {4.5}Business Logic and Architecture}{41}
+\contentsline {subsection}{\numberline {4.5.1}Desktop}{41}
+\contentsline {subsection}{\numberline {4.5.2}Android}{41}
+\contentsline {chapter}{\numberline {5}Testing}{43}
+\contentsline {section}{\numberline {5.1}System Testing}{43}
+\contentsline {subsection}{\numberline {5.1.1}Testing Strategies}{43}
+\contentsline {subsection}{\numberline {5.1.2}Testing Objectives}{44}
+\contentsline {section}{\numberline {5.2}Unit Testing}{44}
+\contentsline {subsection}{\numberline {5.2.1}White Box Testing}{44}
+\contentsline {subsection}{\numberline {5.2.2}Black Box Testing}{45}
+\contentsline {chapter}{\numberline {6}Code Snippet}{46}
+\contentsline {subsection}{\numberline {6.0.3}Welcome Screen}{46}
+\contentsline {subsection}{\numberline {6.0.4}Login Window}{48}
+\contentsline {subsection}{\numberline {6.0.5}Login Function}{50}
+\contentsline {subsection}{\numberline {6.0.6}Chat Window}{52}
+\contentsline {subsection}{\numberline {6.0.7}Incoming Message Listener}{54}
+\contentsline {subsection}{\numberline {6.0.8}Roster Window}{54}
+\contentsline {chapter}{\numberline {7}Results and Output}{55}
+\contentsline {section}{\numberline {7.1}Desktop Application}{55}
+\contentsline {chapter}{\numberline {8}Conclusion and Future Scope}{59}
+\contentsline {section}{\numberline {8.1}Advantages, Disadvantages, Appications}{59}
+\contentsline {subsection}{\numberline {8.1.1}Advantages}{59}
+\contentsline {subsection}{\numberline {8.1.2}Disadvantages}{59}
+\contentsline {subsection}{\numberline {8.1.3}Applications}{60}
+\contentsline {section}{\numberline {8.2}Conclusion}{60}
+\contentsline {section}{\numberline {8.3}Future Scope}{60}
+\contentsline {chapter}{\numberline {9}Appendix A}{61}
+\contentsline {section}{\numberline {9.1}Android Platform}{61}
+\contentsline {subsection}{\numberline {9.1.1}Dalvik Virtual Machine}{61}
+\contentsline {subsection}{\numberline {9.1.2}Android SDK}{62}
+\contentsline {subsection}{\numberline {9.1.3}Android Development Tools}{62}
+\contentsline {section}{\numberline {9.2}Java}{63}
+\contentsline {subsection}{\numberline {9.2.1}Eclipse IDE}{63}
+\contentsline {section}{\numberline {9.3}Basics of the Message Oriented Architecture of Middleware}{65}
+\contentsline {chapter}{\numberline {10}Appendix B}{67}
+\contentsline {chapter}{\numberline {11}Appendix C}{68}
+\contentsline {section}{\numberline {11.1}Introduction}{68}
+\contentsline {section}{\numberline {11.2}Test Item (Function)}{70}
+\contentsline {section}{\numberline {11.3}Features to be tested}{71}
+\contentsline {chapter}{\numberline {12}Appendix D}{72}
+\contentsline {subsection}{\numberline {12.0.1}Technical Research Paper}{72}
+\contentsline {subsection}{\numberline {12.0.2}Certificates and Reviews}{78}
+\contentsline {chapter}{\numberline {13}Self Evaluation Sheet}{86}
